@@ -2,12 +2,42 @@ body {
   font-family: Arial;
   transform: translateZ(0); 
   margin: 5px;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media (max-width: 800px) and (orientation:portrait) {
+  body {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 800px) and (orientation:landscape) {
+  body {
+     -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     -ms-transform: rotate(0deg);
+     transform: rotate(0deg);
+  }
+}
+
+.mtx-user__home {
+  position: absolute;
+  top: 0px;
+  right: 40px;
+  cursor: pointer;
 }
 
 .periodic-row {
   display: flex;
   justify-content: center;
-  height: 4.75vw;
+  height: 5vw;
 }
 
 .periodic-row--empty {
@@ -17,7 +47,7 @@ body {
 .cell {
   float: left;
   position: relative;
-  width: 4.75vw;
+  width: 5vw;
   height: 100%;
 }
 

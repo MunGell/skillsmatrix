@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import TableData from './table.json';
-import './table.css';
+import TableData from '../data/table.json';
+import './_table.scss';
 import $ from 'jquery';
 
 class Table extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         
         this.state = {
             tableData: [],
             groups: []
         };
+
+        this.onClickUser = this.onClickUser.bind(this);
     }   
 
     componentWillMount() {
@@ -71,9 +73,17 @@ class Table extends Component {
 		}
     }
 
+    onClickUser() {
+        let { history } = this.props;
+        history.push('/profile');
+    }
+
 	render() {
 		return (
             <div>
+              <div className="mtx-user__home" onClick={this.onClickUser}>
+                <img src="./user.png"></img>
+              </div>	
 			  <div className="periodic">
 			    <div className="periodic-row">
 			      <a className="cell" href={"/search?" + this.state.tableData[0].name}>
