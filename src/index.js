@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, browserHistory, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Table from './table/table.js';
 import Profile from './profile/profile.js';
 import Search from './search/search.js';
+import Heatmap from './components/heatmap'
 
 class App extends Component {
 	render() {
@@ -21,6 +22,10 @@ class App extends Component {
 
                         <Route exact={true} path="/search" render={(props) => (
                             <Search {...props} />
+                        )}/>
+
+                        <Route exact={true} path="/heatmap" render={(props) => (
+                            <Heatmap {...props} />
                         )}/>
                     </Switch>
                 </div>

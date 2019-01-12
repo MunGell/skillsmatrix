@@ -33,7 +33,7 @@ class Profile extends Component {
                     <div className="mtx-section">user profile<div>.</div></div>  
                     <div className="mtx-block mtx-block--top">
                         <div className="mtx-column">
-                            <img className="mtx-picture" src="./pic.png"></img>
+                            <img className="mtx-picture" src="./pic.png" alt="pic"></img>
                         </div>
                         <div className="mtx-column mtx-column--center">
                             <div className="mtx-section-info">

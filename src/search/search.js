@@ -35,7 +35,7 @@ class Search extends Component {
             <div>
                 <div className="mtx-logo" onClick={this.onClickHome}>nomad<div>.</div></div>  
                 <div className="mtx-user" onClick={this.onClickUser}>
-                    <img src="./user.png"></img>
+                    <img src="./user.png" alt="pic"></img>
                 </div>
                 <div className="mtx-half">
                     <div className="mtx-">
@@ -93,7 +93,7 @@ class Search extends Component {
                                     <div className="mtx-sr__container"  onClick={this.onClickUser}>
                                         <div className="mtx-sr__top">
                                             <div className="mtx-sr__left">
-                                                <img className="mtx-sr__picture" src="./pic.png"></img>
+                                                <img className="mtx-sr__picture" src="./pic.png" alt="pic"></img>
                                             </div>
                                             <div className="mtx-sr__right">
                                                 <div className="mtx-sr__">
