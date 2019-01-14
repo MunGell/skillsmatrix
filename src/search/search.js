@@ -30,8 +30,31 @@ class Search extends Component {
         history.push('/profile');
     }
 
-	render() {
-		return (
+    returnLevels(){
+        let levels = [];
+
+        this.state.userData.forEach((user) => {
+            if(levels.includes(user.level) == false){
+            levels.push(user.level)
+            }});
+
+        return levels;
+    }
+
+    returnDept(){
+        let dept = [];
+
+        this.state.userData.forEach((user) => {
+            if(dept.includes(user.dept) == false){
+            dept.push(user.dept)
+            }});
+
+        return dept;
+    }
+
+    render() {
+        this.returnLevels();
+        return (
             <div>
                 <div className="mtx-logo" onClick={this.onClickHome}>nomad<div>.</div></div>  
                 <div className="mtx-user" onClick={this.onClickUser}>
@@ -52,22 +75,20 @@ class Search extends Component {
                                 <div className="mtx-section__title">
                                     level
                                 </div>
-                                <div className="mtx-sidebar__option">Analyst</div>
-                                <div className="mtx-sidebar__option">Consultant</div>
-                                <div className="mtx-sidebar__option">Senior Consultant</div>
-                                <div className="mtx-sidebar__option">Manager</div>
-                                <div className="mtx-sidebar__option">Senior Manager</div>
+                                {this.returnLevels().map((level,index) =>
+                                    <div className="mtx-sidebar__option">{level}</div>
+                                    )}
+                                
                             </div>
                             <div className="mtx-sidebar__section">
                                 <div className="mtx-section__title">
                                     department
                                 </div>
-                                <div className="mtx-sidebar__option">Systems Integration</div>
-                                <div className="mtx-sidebar__option">Deloitte Digital</div>
-                                <div className="mtx-sidebar__option">Enterprise Applications</div>
-                                <div className="mtx-sidebar__option">AIM</div>
-                                <div className="mtx-sidebar__option">Technology Vendors</div>
-                                <div className="mtx-sidebar__option">Technology Operations</div>
+
+                                {this.returnDept().map((dept,index) =>
+                                    <div className="mtx-sidebar__option">{dept}</div>
+                                    )}
+
                             </div>
                             <div className="mtx-sidebar__section">
                                 <div className="mtx-section__title">
@@ -119,7 +140,7 @@ class Search extends Component {
                 </div>    
             </div>
         );
-	}
+    }
 }
 
 export default Search;
