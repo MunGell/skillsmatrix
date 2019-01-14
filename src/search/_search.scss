@@ -80,6 +80,14 @@
   padding: 8px;
 }
 
+.search-check{
+  
+  .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: green;
+}
+
+}
+
 @media (max-width: 680px) {
  
 }

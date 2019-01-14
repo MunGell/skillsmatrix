@@ -76,7 +76,13 @@ class Search extends Component {
                                     level
                                 </div>
                                 {this.returnLevels().map((level,index) =>
-                                    <div className="mtx-sidebar__option">{level}</div>
+
+                                    <div className="search-check custom-control custom-checkbox my-1 mr-sm-2">
+                                        <input type="checkbox" value= {level} className="custom-control-input" id={level}/>
+                                        <label className="custom-control-label" for={level}>{level}</label>
+                                    </div>
+
+                                    
                                     )}
                                 
                             </div>
@@ -86,7 +92,10 @@ class Search extends Component {
                                 </div>
 
                                 {this.returnDept().map((dept,index) =>
-                                    <div className="mtx-sidebar__option">{dept}</div>
+                                    <div className="search-check custom-control custom-checkbox my-1 mr-sm-2">
+                                        <input type="checkbox" value= {dept} className="custom-control-input" id={dept}/>
+                                        <label className="custom-control-label" for={dept}>{dept}</label>
+                                    </div>
                                     )}
 
                             </div>
