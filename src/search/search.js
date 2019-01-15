@@ -21,20 +21,20 @@ class Search extends Component {
   }
 
   onClickHome() {
-    const { history } = this.props;
+    let { history } = this.props;
     history.push('/');
   }
 
   onClickUser() {
-    const { history } = this.props;
+    let { history } = this.props;
     history.push('/profile');
   }
 
   returnLevels() {
-    const levels = [];
+    let levels = [];
 
     this.state.userData.forEach(user => {
-      if (levels.includes(user.level) === false) {
+      if (levels.includes(user.level) == false) {
         levels.push(user.level);
       }
     });
@@ -43,10 +43,10 @@ class Search extends Component {
   }
 
   returnDept() {
-    const dept = [];
+    let dept = [];
 
     this.state.userData.forEach(user => {
-      if (dept.includes(user.dept) === false) {
+      if (dept.includes(user.dept) == false) {
         dept.push(user.dept);
       }
     });
@@ -78,17 +78,14 @@ class Search extends Component {
               <div className="mtx-sidebar__section">
                 <div className="mtx-section__title">level</div>
                 {this.returnLevels().map((level, index) => (
-                  <div
-                    key={index}
-                    className="search-check custom-control custom-checkbox my-1 mr-sm-2"
-                  >
+                  <div className="search-check custom-control custom-checkbox my-1 mr-sm-2">
                     <input
                       type="checkbox"
                       value={level}
                       className="custom-control-input"
                       id={level}
                     />
-                    <label className="custom-control-label" htmlFor={level}>
+                    <label className="custom-control-label" for={level}>
                       {level}
                     </label>
                   </div>
@@ -98,17 +95,14 @@ class Search extends Component {
                 <div className="mtx-section__title">department</div>
 
                 {this.returnDept().map((dept, index) => (
-                  <div
-                    key={index}
-                    className="search-check custom-control custom-checkbox my-1 mr-sm-2"
-                  >
+                  <div className="search-check custom-control custom-checkbox my-1 mr-sm-2">
                     <input
                       type="checkbox"
                       value={dept}
                       className="custom-control-input"
                       id={dept}
                     />
-                    <label className="custom-control-label" htmlFor={dept}>
+                    <label className="custom-control-label" for={dept}>
                       {dept}
                     </label>
                   </div>
@@ -133,12 +127,8 @@ class Search extends Component {
             <div className="mtx-results">
               <div className="mtx-section__title ">sort by</div>
               <div className="mtx-sr__list">
-                {this.state.userData.map((i, index) => (
-                  <div
-                    key={index}
-                    className="mtx-sr__container"
-                    onClick={this.onClickUser}
-                  >
+                {this.state.userData.map(i => (
+                  <div className="mtx-sr__container" onClick={this.onClickUser}>
                     <div className="mtx-sr__top">
                       <div className="mtx-sr__left">
                         <img className="mtx-sr__picture" src="./pic.png" />
@@ -154,10 +144,8 @@ class Search extends Component {
                       </div>
                     </div>
                     <div className="mtx-sr__bottom">
-                      {i.skills.slice(0, 9).map((i, index) => (
-                        <div key={index} className="mtx-sr__skill">
-                          {i.name}
-                        </div>
+                      {i.skills.slice(0, 9).map(i => (
+                        <div className="mtx-sr__skill">{i.name}</div>
                       ))}
                       ...
                     </div>
