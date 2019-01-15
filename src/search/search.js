@@ -17,7 +17,7 @@ class Search extends Component {
 
         this.onClickHome = this.onClickHome.bind(this);
         this.onClickUser = this.onClickUser.bind(this);
-        this.onFilterSelect =this.onFilterSelect.bind(this);
+        this.onFilterSelect = this.onFilterSelect.bind(this);
     }   
 
     componentWillMount() {
@@ -37,140 +37,135 @@ class Search extends Component {
         history.push('/profile');
     }
 
-    returnLevels(){
+    returnLevels() {
         let levels = [];
 
         this.state.userData.forEach((user) => {
-            if(levels.includes(user.level) === false){
-            levels.push(user.level)
+            if(levels.includes(user.level) === false) {
+                levels.push(user.level);
             }});
 
         return levels;
     }
 
-    onFilterSelect(selectedList, event){
+    onFilterSelect(selectedList, event) {
         let list= selectedList;
 
-        if(event.target.checked && !list.includes(event.target.value)){
-            list.push(event.target.value)
-        } else if(!event.target.checked && list.includes(event.target.value)){
+        if(event.target.checked && !list.includes(event.target.value)) {
+            list.push(event.target.value);
+        } else if(!event.target.checked && list.includes(event.target.value)) {
             let index = list.indexOf(event.target.value);
-            if(index !== -1){
+            if(index !== -1) {
                 list.splice(index,1);
             }
         }
 
-         if(selectedList === this.state.selectedLevels){
+        if(selectedList === this.state.selectedLevels) {
             this.setState({
-            selectedLevels : list
-        }, this.filterUsers());
-
-        } else if(selectedList === this.state.selectedDept){
+                selectedLevels : list
+            }, this.filterUsers());
+        } else if(selectedList === this.state.selectedDept) {
             this.setState({
-            selectedDept : list
-        }, this.filterUsers());
+                selectedDept : list
+            }, this.filterUsers());
         }
-
     }
 
+<<<<<<< HEAD
     filterUsers(){
 
         if(this.state.selectedLevels.length === 0 && this.state.selectedDept.length === 0){
            this.setState({
             filteredUsers : this.state.userData
+=======
+    filterUsers() {
+        if(this.state.selectedLevels.length === 0 && this.state.selectedDept.length === 0) {
+           this.setState({
+                selected : this.state.userData
+>>>>>>> 8fb51772831332a779339f86bba7c549ab089f32
             }); 
         } else {
-
             // creates array of all users with selected levels:
-
             let usersWithSelectedLevels =[];
             let usersByLevelArray= [];
             
-            if(this.state.selectedLevels.length !== 0){
-                for(let i=0; i<this.state.selectedLevels.length; i++){
+            if(this.state.selectedLevels.length !== 0) {
+                for(let i=0; i<this.state.selectedLevels.length; i++) {
                     usersWithSelectedLevels.push(this.state.userData.filter(user => user.level == this.state.selectedLevels[i]))
                 }
 
-                for(let i=0;i<usersWithSelectedLevels.length;i++){
-                    for(let j=0; j<usersWithSelectedLevels[i].length; j++){
+                for(let i=0;i<usersWithSelectedLevels.length;i++) {
+                    for(let j=0; j<usersWithSelectedLevels[i].length; j++) {
                         usersByLevelArray.push(usersWithSelectedLevels[i][j])
                     }
                 }
             }
 
             // creates array of all users with selected dept. :
-
             let usersWithSelectedDept =[];
             let usersByDeptArray=[];
 
-            if(this.state.selectedDept.length !== 0){
-                for(let i=0; i<this.state.selectedDept.length; i++){
+            if(this.state.selectedDept.length !== 0) {
+                for(let i=0; i<this.state.selectedDept.length; i++) {
                     usersWithSelectedDept.push(this.state.userData.filter(user => user.dept == this.state.selectedDept[i]))
                 }
 
-                 for(let i=0;i<usersWithSelectedDept.length;i++){
-                    for(let j=0; j<usersWithSelectedDept[i].length; j++){
+                 for(let i=0;i<usersWithSelectedDept.length;i++) {
+                    for(let j=0; j<usersWithSelectedDept[i].length; j++) {
                         usersByDeptArray.push(usersWithSelectedDept[i][j])
                     }
                 }
             }
 
-
             let allUsers =[];
 
             // if there are levels and dept selected:
-            
-            if(this.state.selectedDept.length !== 0 && this.state.selectedLevels.length !== 0){
+            if(this.state.selectedDept.length !== 0 && this.state.selectedLevels.length !== 0) {
                 let filteredUsers= [];
                 let filteredArray=[];
 
                 // filters the users by level array by all of the selected dept
 
-                 for(let i=0; i<usersByDeptArray.length; i++){
-                    filteredUsers.push(usersByLevelArray.filter(user => user.dept == usersByDeptArray[i].dept))
+                for(let i=0; i<usersByDeptArray.length; i++) {
+                    filteredUsers.push(usersByLevelArray.filter(user => user.dept == usersByDeptArray[i].dept));
                 }
 
                 // puts all of the users in a single array
 
-                 for(let i=0;i<filteredUsers.length;i++){
-                    for(let j=0; j<filteredUsers[i].length; j++){
-                        filteredArray.push(filteredUsers[i][j])
+                for(let i=0;i<filteredUsers.length;i++) {
+                    for(let j=0; j<filteredUsers[i].length; j++) {
+                        filteredArray.push(filteredUsers[i][j]);
                     }
                 }
 
                 allUsers = filteredArray;
             }
-            else{
+            else {
                 allUsers= usersByLevelArray.concat(usersByDeptArray);
             }
 
             let users= [];
 
             // remove any duplicate users
-
-            for(let i=0; i<allUsers.length; i++){
-                if(users.includes(allUsers[i])){
+            for(let i=0; i<allUsers.length; i++) {
+                if(users.includes(allUsers[i])) {
                     continue;
-                }else{
+                } else {
                     users.push(allUsers[i]);
                 }
             }
 
             // set new list of users
-
-            this.setState({
-            filteredUsers : users
-            }); 
+            this.setState({ filteredUsers: users }); 
         }
-  
     }
 
-    returnDept(){
+    returnDept() {
         let dept = [];
 
         this.state.userData.forEach((user) => {
             if(dept.includes(user.dept) === false){
-            dept.push(user.dept)
+                dept.push(user.dept)
             }});
 
         return dept;
