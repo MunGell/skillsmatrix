@@ -71,18 +71,12 @@ class Search extends Component {
         }
     }
 
-<<<<<<< HEAD
+
     filterUsers(){
 
         if(this.state.selectedLevels.length === 0 && this.state.selectedDept.length === 0){
            this.setState({
             filteredUsers : this.state.userData
-=======
-    filterUsers() {
-        if(this.state.selectedLevels.length === 0 && this.state.selectedDept.length === 0) {
-           this.setState({
-                selected : this.state.userData
->>>>>>> 8fb51772831332a779339f86bba7c549ab089f32
             }); 
         } else {
             // creates array of all users with selected levels:
