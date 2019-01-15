@@ -1,1135 +1,1136 @@
 [
-	{
-		"name" : "Ian Kelleher",
-		"email" : "ikelleher@deloitte.ie",
-		"level" : "Analyst",
-		"dept" : "Deloitte Digital",
-		"currentAss" : "Merck",
-		"endDate" : "15.02.19",
-		"assHistory" : [
-			{
-				"order" : 0,
-				"name" : "eir"
-			},
-			{
-				"order" : 1,
-				"name" : "Novartis"
-			},
-			{
-				"order" : 2,
-				"name" : "Allianz"
-			},
-			{
-				"order" : 3,
-				"name" : "Paddy Power"
-			}
-		],
-		"skills" : [
-			{
-				"name" : "javascript",
-				"number" : 4,
-				"displayName" : "JavaScript",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "c",
-				"number" : 3,
-				"displayName" : "C",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "jsx",
-				"number" : 3,
-				"displayName" : "JSX",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "html",
-				"number" : 4,
-				"displayName" : "HTML5",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "soap",
-				"number" : 3,
-				"displayName" : "SOAP",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "rest",
-				"number" : 3,
-				"displayName" : "REST",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "apex",
-				"number" : 3,
-				"displayName" : "Apex",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "ruby",
-				"number" : 1,
-				"displayName" : "Ruby",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "spring",
-				"number" : 2,
-				"displayName" : "Spring",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "java",
-				"number" : 3,
-				"displayName" : "Java",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "react",
-				"number" : 4,
-				"displayName" : "ReactJS",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "aws",
-				"number" : 2,
-				"displayName" : "AWS",
-				"group" : "dm",
-				"groupDisplayName" : "Data Management"
-			},
-			{
-				"name" : "grails",
-				"number" : 2,
-				"displayName" : "Grails",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "groovy",
-				"number" : 2,
-				"displayName" : "Groovy",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			}
-		]
-	},
-	{
-		"name" : "Ian Kelleher",
-		"email" : "ikelleher@deloitte.ie",
-		"level" : "Consultant",
-		"dept" : "Deloitte Digital",
-		"currentAss" : "Merck",
-		"endDate" : "15.02.19",
-		"assHistory" : [
-			{
-				"order" : 0,
-				"name" : "eir"
-			},
-			{
-				"order" : 1,
-				"name" : "Novartis"
-			},
-			{
-				"order" : 2,
-				"name" : "Allianz"
-			},
-			{
-				"order" : 3,
-				"name" : "Paddy Power"
-			}
-		],
-		"skills" : [
-			{
-				"name" : "javascript",
-				"number" : 4,
-				"displayName" : "JavaScript",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "c",
-				"number" : 3,
-				"displayName" : "C",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "jsx",
-				"number" : 3,
-				"displayName" : "JSX",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "html",
-				"number" : 4,
-				"displayName" : "HTML5",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "soap",
-				"number" : 3,
-				"displayName" : "SOAP",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "rest",
-				"number" : 3,
-				"displayName" : "REST",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "apex",
-				"number" : 3,
-				"displayName" : "Apex",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "ruby",
-				"number" : 1,
-				"displayName" : "Ruby",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "spring",
-				"number" : 2,
-				"displayName" : "Spring",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "java",
-				"number" : 3,
-				"displayName" : "Java",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "react",
-				"number" : 4,
-				"displayName" : "ReactJS",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "aws",
-				"number" : 2,
-				"displayName" : "AWS",
-				"group" : "dm",
-				"groupDisplayName" : "Data Management"
-			},
-			{
-				"name" : "grails",
-				"number" : 2,
-				"displayName" : "Grails",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "groovy",
-				"number" : 2,
-				"displayName" : "Groovy",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			}
-		]
-	},
-	{
-		"name" : "Ian Kelleher",
-		"email" : "ikelleher@deloitte.ie",
-		"level" : "Consultant",
-		"dept" : "Deloitte Digital",
-		"currentAss" : "Merck",
-		"endDate" : "15.02.19",
-		"assHistory" : [
-			{
-				"order" : 0,
-				"name" : "eir"
-			},
-			{
-				"order" : 1,
-				"name" : "Novartis"
-			},
-			{
-				"order" : 2,
-				"name" : "Allianz"
-			},
-			{
-				"order" : 3,
-				"name" : "Paddy Power"
-			}
-		],
-		"skills" : [
-			{
-				"name" : "javascript",
-				"number" : 4,
-				"displayName" : "JavaScript",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "c",
-				"number" : 3,
-				"displayName" : "C",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "jsx",
-				"number" : 3,
-				"displayName" : "JSX",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "html",
-				"number" : 4,
-				"displayName" : "HTML5",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "soap",
-				"number" : 3,
-				"displayName" : "SOAP",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "rest",
-				"number" : 3,
-				"displayName" : "REST",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "apex",
-				"number" : 3,
-				"displayName" : "Apex",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "ruby",
-				"number" : 1,
-				"displayName" : "Ruby",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "spring",
-				"number" : 2,
-				"displayName" : "Spring",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "java",
-				"number" : 3,
-				"displayName" : "Java",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "react",
-				"number" : 4,
-				"displayName" : "ReactJS",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "aws",
-				"number" : 2,
-				"displayName" : "AWS",
-				"group" : "dm",
-				"groupDisplayName" : "Data Management"
-			},
-			{
-				"name" : "grails",
-				"number" : 2,
-				"displayName" : "Grails",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "groovy",
-				"number" : 2,
-				"displayName" : "Groovy",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			}
-		]
-	},
-	{
-		"name" : "Ian Kelleher",
-		"email" : "ikelleher@deloitte.ie",
-		"level" : "Manager",
-		"dept" : "Deloitte Digital",
-		"currentAss" : "Merck",
-		"endDate" : "15.02.19",
-		"assHistory" : [
-			{
-				"order" : 0,
-				"name" : "eir"
-			},
-			{
-				"order" : 1,
-				"name" : "Novartis"
-			},
-			{
-				"order" : 2,
-				"name" : "Allianz"
-			},
-			{
-				"order" : 3,
-				"name" : "Paddy Power"
-			}
-		],
-		"skills" : [
-			{
-				"name" : "javascript",
-				"number" : 4,
-				"displayName" : "JavaScript",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "c",
-				"number" : 3,
-				"displayName" : "C",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "jsx",
-				"number" : 3,
-				"displayName" : "JSX",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "html",
-				"number" : 4,
-				"displayName" : "HTML5",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "soap",
-				"number" : 3,
-				"displayName" : "SOAP",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "rest",
-				"number" : 3,
-				"displayName" : "REST",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "apex",
-				"number" : 3,
-				"displayName" : "Apex",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "ruby",
-				"number" : 1,
-				"displayName" : "Ruby",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "spring",
-				"number" : 2,
-				"displayName" : "Spring",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "java",
-				"number" : 3,
-				"displayName" : "Java",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "react",
-				"number" : 4,
-				"displayName" : "ReactJS",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "aws",
-				"number" : 2,
-				"displayName" : "AWS",
-				"group" : "dm",
-				"groupDisplayName" : "Data Management"
-			},
-			{
-				"name" : "grails",
-				"number" : 2,
-				"displayName" : "Grails",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "groovy",
-				"number" : 2,
-				"displayName" : "Groovy",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			}
-		]
-	},
-	{
-		"name" : "Ian Kelleher",
-		"email" : "ikelleher@deloitte.ie",
-		"level" : "Consultant",
-		"dept" : "Systems Integration",
-		"currentAss" : "Merck",
-		"endDate" : "15.02.19",
-		"assHistory" : [
-			{
-				"order" : 0,
-				"name" : "eir"
-			},
-			{
-				"order" : 1,
-				"name" : "Novartis"
-			},
-			{
-				"order" : 2,
-				"name" : "Allianz"
-			},
-			{
-				"order" : 3,
-				"name" : "Paddy Power"
-			}
-		],
-		"skills" : [
-			{
-				"name" : "javascript",
-				"number" : 4,
-				"displayName" : "JavaScript",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "c",
-				"number" : 3,
-				"displayName" : "C",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "jsx",
-				"number" : 3,
-				"displayName" : "JSX",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "html",
-				"number" : 4,
-				"displayName" : "HTML5",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "soap",
-				"number" : 3,
-				"displayName" : "SOAP",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "rest",
-				"number" : 3,
-				"displayName" : "REST",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "apex",
-				"number" : 3,
-				"displayName" : "Apex",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "ruby",
-				"number" : 1,
-				"displayName" : "Ruby",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "spring",
-				"number" : 2,
-				"displayName" : "Spring",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "java",
-				"number" : 3,
-				"displayName" : "Java",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "react",
-				"number" : 4,
-				"displayName" : "ReactJS",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "aws",
-				"number" : 2,
-				"displayName" : "AWS",
-				"group" : "dm",
-				"groupDisplayName" : "Data Management"
-			},
-			{
-				"name" : "grails",
-				"number" : 2,
-				"displayName" : "Grails",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "groovy",
-				"number" : 2,
-				"displayName" : "Groovy",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			}
-		]
-	},
-	{
-		"name" : "Ian Kelleher",
-		"email" : "ikelleher@deloitte.ie",
-		"level" : "Consultant",
-		"dept" : "Deloitte Digital",
-		"currentAss" : "Merck",
-		"endDate" : "15.02.19",
-		"assHistory" : [
-			{
-				"order" : 0,
-				"name" : "eir"
-			},
-			{
-				"order" : 1,
-				"name" : "Novartis"
-			},
-			{
-				"order" : 2,
-				"name" : "Allianz"
-			},
-			{
-				"order" : 3,
-				"name" : "Paddy Power"
-			}
-		],
-		"skills" : [
-			{
-				"name" : "javascript",
-				"number" : 4,
-				"displayName" : "JavaScript",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "c",
-				"number" : 3,
-				"displayName" : "C",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "jsx",
-				"number" : 3,
-				"displayName" : "JSX",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "html",
-				"number" : 4,
-				"displayName" : "HTML5",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "soap",
-				"number" : 3,
-				"displayName" : "SOAP",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "rest",
-				"number" : 3,
-				"displayName" : "REST",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "apex",
-				"number" : 3,
-				"displayName" : "Apex",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "ruby",
-				"number" : 1,
-				"displayName" : "Ruby",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "spring",
-				"number" : 2,
-				"displayName" : "Spring",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "java",
-				"number" : 3,
-				"displayName" : "Java",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "react",
-				"number" : 4,
-				"displayName" : "ReactJS",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "aws",
-				"number" : 2,
-				"displayName" : "AWS",
-				"group" : "dm",
-				"groupDisplayName" : "Data Management"
-			},
-			{
-				"name" : "grails",
-				"number" : 2,
-				"displayName" : "Grails",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "groovy",
-				"number" : 2,
-				"displayName" : "Groovy",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			}
-		]
-	},
-	{
-		"name" : "Ian Kelleher",
-		"email" : "ikelleher@deloitte.ie",
-		"level" : "Consultant",
-		"dept" : "Deloitte Digital",
-		"currentAss" : "Merck",
-		"endDate" : "15.02.19",
-		"assHistory" : [
-			{
-				"order" : 0,
-				"name" : "eir"
-			},
-			{
-				"order" : 1,
-				"name" : "Novartis"
-			},
-			{
-				"order" : 2,
-				"name" : "Allianz"
-			},
-			{
-				"order" : 3,
-				"name" : "Paddy Power"
-			}
-		],
-		"skills" : [
-			{
-				"name" : "javascript",
-				"number" : 4,
-				"displayName" : "JavaScript",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "c",
-				"number" : 3,
-				"displayName" : "C",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "jsx",
-				"number" : 3,
-				"displayName" : "JSX",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "html",
-				"number" : 4,
-				"displayName" : "HTML5",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "soap",
-				"number" : 3,
-				"displayName" : "SOAP",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "rest",
-				"number" : 3,
-				"displayName" : "REST",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "apex",
-				"number" : 3,
-				"displayName" : "Apex",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "ruby",
-				"number" : 1,
-				"displayName" : "Ruby",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "spring",
-				"number" : 2,
-				"displayName" : "Spring",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "java",
-				"number" : 3,
-				"displayName" : "Java",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "react",
-				"number" : 4,
-				"displayName" : "ReactJS",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "aws",
-				"number" : 2,
-				"displayName" : "AWS",
-				"group" : "dm",
-				"groupDisplayName" : "Data Management"
-			},
-			{
-				"name" : "grails",
-				"number" : 2,
-				"displayName" : "Grails",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "groovy",
-				"number" : 2,
-				"displayName" : "Groovy",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			}
-		]
-	},
-	{
-		"name" : "Ian Kelleher",
-		"email" : "ikelleher@deloitte.ie",
-		"level" : "Consultant",
-		"dept" : "Deloitte Digital",
-		"currentAss" : "Merck",
-		"endDate" : "15.02.19",
-		"assHistory" : [
-			{
-				"order" : 0,
-				"name" : "eir"
-			},
-			{
-				"order" : 1,
-				"name" : "Novartis"
-			},
-			{
-				"order" : 2,
-				"name" : "Allianz"
-			},
-			{
-				"order" : 3,
-				"name" : "Paddy Power"
-			}
-		],
-		"skills" : [
-			{
-				"name" : "javascript",
-				"number" : 4,
-				"displayName" : "JavaScript",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "c",
-				"number" : 3,
-				"displayName" : "C",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "jsx",
-				"number" : 3,
-				"displayName" : "JSX",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "html",
-				"number" : 4,
-				"displayName" : "HTML5",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "soap",
-				"number" : 3,
-				"displayName" : "SOAP",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "rest",
-				"number" : 3,
-				"displayName" : "REST",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "apex",
-				"number" : 3,
-				"displayName" : "Apex",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "ruby",
-				"number" : 1,
-				"displayName" : "Ruby",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "spring",
-				"number" : 2,
-				"displayName" : "Spring",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "java",
-				"number" : 3,
-				"displayName" : "Java",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "react",
-				"number" : 4,
-				"displayName" : "ReactJS",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "aws",
-				"number" : 2,
-				"displayName" : "AWS",
-				"group" : "dm",
-				"groupDisplayName" : "Data Management"
-			},
-			{
-				"name" : "grails",
-				"number" : 2,
-				"displayName" : "Grails",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "groovy",
-				"number" : 2,
-				"displayName" : "Groovy",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			}
-		]
-	},{
-		"name" : "Ian Kelleher",
-		"email" : "ikelleher@deloitte.ie",
-		"level" : "Consultant",
-		"dept" : "Deloitte Digital",
-		"currentAss" : "Merck",
-		"endDate" : "15.02.19",
-		"assHistory" : [
-			{
-				"order" : 0,
-				"name" : "eir"
-			},
-			{
-				"order" : 1,
-				"name" : "Novartis"
-			},
-			{
-				"order" : 2,
-				"name" : "Allianz"
-			},
-			{
-				"order" : 3,
-				"name" : "Paddy Power"
-			}
-		],
-		"skills" : [
-			{
-				"name" : "javascript",
-				"number" : 4,
-				"displayName" : "JavaScript",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "c",
-				"number" : 3,
-				"displayName" : "C",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "jsx",
-				"number" : 3,
-				"displayName" : "JSX",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "html",
-				"number" : 4,
-				"displayName" : "HTML5",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "soap",
-				"number" : 3,
-				"displayName" : "SOAP",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "rest",
-				"number" : 3,
-				"displayName" : "REST",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "apex",
-				"number" : 3,
-				"displayName" : "Apex",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "ruby",
-				"number" : 1,
-				"displayName" : "Ruby",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "spring",
-				"number" : 2,
-				"displayName" : "Spring",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "java",
-				"number" : 3,
-				"displayName" : "Java",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "react",
-				"number" : 4,
-				"displayName" : "ReactJS",
-				"group" : "fel",
-				"groupDisplayName" : "Front End Languages"
-			},
-			{
-				"name" : "aws",
-				"number" : 2,
-				"displayName" : "AWS",
-				"group" : "dm",
-				"groupDisplayName" : "Data Management"
-			},
-			{
-				"name" : "grails",
-				"number" : 2,
-				"displayName" : "Grails",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			},
-			{
-				"name" : "groovy",
-				"number" : 2,
-				"displayName" : "Groovy",
-				"group" : "cl",
-				"groupDisplayName" : "Core Languages"
-			}
-		]
-	}
+  {
+    "name": "Ian Kelleher",
+    "email": "ikelleher@deloitte.ie",
+    "level": "Analyst",
+    "dept": "Deloitte Digital",
+    "currentAss": "Merck",
+    "endDate": "15.02.19",
+    "assHistory": [
+      {
+        "order": 0,
+        "name": "eir"
+      },
+      {
+        "order": 1,
+        "name": "Novartis"
+      },
+      {
+        "order": 2,
+        "name": "Allianz"
+      },
+      {
+        "order": 3,
+        "name": "Paddy Power"
+      }
+    ],
+    "skills": [
+      {
+        "name": "javascript",
+        "number": 4,
+        "displayName": "JavaScript",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "c",
+        "number": 3,
+        "displayName": "C",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "jsx",
+        "number": 3,
+        "displayName": "JSX",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "html",
+        "number": 4,
+        "displayName": "HTML5",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "soap",
+        "number": 3,
+        "displayName": "SOAP",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "rest",
+        "number": 3,
+        "displayName": "REST",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "apex",
+        "number": 3,
+        "displayName": "Apex",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "ruby",
+        "number": 1,
+        "displayName": "Ruby",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "spring",
+        "number": 2,
+        "displayName": "Spring",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "java",
+        "number": 3,
+        "displayName": "Java",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "react",
+        "number": 4,
+        "displayName": "ReactJS",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "aws",
+        "number": 2,
+        "displayName": "AWS",
+        "group": "dm",
+        "groupDisplayName": "Data Management"
+      },
+      {
+        "name": "grails",
+        "number": 2,
+        "displayName": "Grails",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "groovy",
+        "number": 2,
+        "displayName": "Groovy",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      }
+    ]
+  },
+  {
+    "name": "Ian Kelleher",
+    "email": "ikelleher@deloitte.ie",
+    "level": "Consultant",
+    "dept": "Deloitte Digital",
+    "currentAss": "Merck",
+    "endDate": "15.02.19",
+    "assHistory": [
+      {
+        "order": 0,
+        "name": "eir"
+      },
+      {
+        "order": 1,
+        "name": "Novartis"
+      },
+      {
+        "order": 2,
+        "name": "Allianz"
+      },
+      {
+        "order": 3,
+        "name": "Paddy Power"
+      }
+    ],
+    "skills": [
+      {
+        "name": "javascript",
+        "number": 4,
+        "displayName": "JavaScript",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "c",
+        "number": 3,
+        "displayName": "C",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "jsx",
+        "number": 3,
+        "displayName": "JSX",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "html",
+        "number": 4,
+        "displayName": "HTML5",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "soap",
+        "number": 3,
+        "displayName": "SOAP",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "rest",
+        "number": 3,
+        "displayName": "REST",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "apex",
+        "number": 3,
+        "displayName": "Apex",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "ruby",
+        "number": 1,
+        "displayName": "Ruby",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "spring",
+        "number": 2,
+        "displayName": "Spring",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "java",
+        "number": 3,
+        "displayName": "Java",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "react",
+        "number": 4,
+        "displayName": "ReactJS",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "aws",
+        "number": 2,
+        "displayName": "AWS",
+        "group": "dm",
+        "groupDisplayName": "Data Management"
+      },
+      {
+        "name": "grails",
+        "number": 2,
+        "displayName": "Grails",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "groovy",
+        "number": 2,
+        "displayName": "Groovy",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      }
+    ]
+  },
+  {
+    "name": "Ian Kelleher",
+    "email": "ikelleher@deloitte.ie",
+    "level": "Consultant",
+    "dept": "Deloitte Digital",
+    "currentAss": "Merck",
+    "endDate": "15.02.19",
+    "assHistory": [
+      {
+        "order": 0,
+        "name": "eir"
+      },
+      {
+        "order": 1,
+        "name": "Novartis"
+      },
+      {
+        "order": 2,
+        "name": "Allianz"
+      },
+      {
+        "order": 3,
+        "name": "Paddy Power"
+      }
+    ],
+    "skills": [
+      {
+        "name": "javascript",
+        "number": 4,
+        "displayName": "JavaScript",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "c",
+        "number": 3,
+        "displayName": "C",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "jsx",
+        "number": 3,
+        "displayName": "JSX",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "html",
+        "number": 4,
+        "displayName": "HTML5",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "soap",
+        "number": 3,
+        "displayName": "SOAP",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "rest",
+        "number": 3,
+        "displayName": "REST",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "apex",
+        "number": 3,
+        "displayName": "Apex",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "ruby",
+        "number": 1,
+        "displayName": "Ruby",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "spring",
+        "number": 2,
+        "displayName": "Spring",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "java",
+        "number": 3,
+        "displayName": "Java",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "react",
+        "number": 4,
+        "displayName": "ReactJS",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "aws",
+        "number": 2,
+        "displayName": "AWS",
+        "group": "dm",
+        "groupDisplayName": "Data Management"
+      },
+      {
+        "name": "grails",
+        "number": 2,
+        "displayName": "Grails",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "groovy",
+        "number": 2,
+        "displayName": "Groovy",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      }
+    ]
+  },
+  {
+    "name": "Ian Kelleher",
+    "email": "ikelleher@deloitte.ie",
+    "level": "Manager",
+    "dept": "Deloitte Digital",
+    "currentAss": "Merck",
+    "endDate": "15.02.19",
+    "assHistory": [
+      {
+        "order": 0,
+        "name": "eir"
+      },
+      {
+        "order": 1,
+        "name": "Novartis"
+      },
+      {
+        "order": 2,
+        "name": "Allianz"
+      },
+      {
+        "order": 3,
+        "name": "Paddy Power"
+      }
+    ],
+    "skills": [
+      {
+        "name": "javascript",
+        "number": 4,
+        "displayName": "JavaScript",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "c",
+        "number": 3,
+        "displayName": "C",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "jsx",
+        "number": 3,
+        "displayName": "JSX",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "html",
+        "number": 4,
+        "displayName": "HTML5",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "soap",
+        "number": 3,
+        "displayName": "SOAP",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "rest",
+        "number": 3,
+        "displayName": "REST",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "apex",
+        "number": 3,
+        "displayName": "Apex",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "ruby",
+        "number": 1,
+        "displayName": "Ruby",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "spring",
+        "number": 2,
+        "displayName": "Spring",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "java",
+        "number": 3,
+        "displayName": "Java",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "react",
+        "number": 4,
+        "displayName": "ReactJS",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "aws",
+        "number": 2,
+        "displayName": "AWS",
+        "group": "dm",
+        "groupDisplayName": "Data Management"
+      },
+      {
+        "name": "grails",
+        "number": 2,
+        "displayName": "Grails",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "groovy",
+        "number": 2,
+        "displayName": "Groovy",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      }
+    ]
+  },
+  {
+    "name": "Ian Kelleher",
+    "email": "ikelleher@deloitte.ie",
+    "level": "Consultant",
+    "dept": "Systems Integration",
+    "currentAss": "Merck",
+    "endDate": "15.02.19",
+    "assHistory": [
+      {
+        "order": 0,
+        "name": "eir"
+      },
+      {
+        "order": 1,
+        "name": "Novartis"
+      },
+      {
+        "order": 2,
+        "name": "Allianz"
+      },
+      {
+        "order": 3,
+        "name": "Paddy Power"
+      }
+    ],
+    "skills": [
+      {
+        "name": "javascript",
+        "number": 4,
+        "displayName": "JavaScript",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "c",
+        "number": 3,
+        "displayName": "C",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "jsx",
+        "number": 3,
+        "displayName": "JSX",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "html",
+        "number": 4,
+        "displayName": "HTML5",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "soap",
+        "number": 3,
+        "displayName": "SOAP",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "rest",
+        "number": 3,
+        "displayName": "REST",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "apex",
+        "number": 3,
+        "displayName": "Apex",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "ruby",
+        "number": 1,
+        "displayName": "Ruby",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "spring",
+        "number": 2,
+        "displayName": "Spring",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "java",
+        "number": 3,
+        "displayName": "Java",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "react",
+        "number": 4,
+        "displayName": "ReactJS",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "aws",
+        "number": 2,
+        "displayName": "AWS",
+        "group": "dm",
+        "groupDisplayName": "Data Management"
+      },
+      {
+        "name": "grails",
+        "number": 2,
+        "displayName": "Grails",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "groovy",
+        "number": 2,
+        "displayName": "Groovy",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      }
+    ]
+  },
+  {
+    "name": "Ian Kelleher",
+    "email": "ikelleher@deloitte.ie",
+    "level": "Consultant",
+    "dept": "Deloitte Digital",
+    "currentAss": "Merck",
+    "endDate": "15.02.19",
+    "assHistory": [
+      {
+        "order": 0,
+        "name": "eir"
+      },
+      {
+        "order": 1,
+        "name": "Novartis"
+      },
+      {
+        "order": 2,
+        "name": "Allianz"
+      },
+      {
+        "order": 3,
+        "name": "Paddy Power"
+      }
+    ],
+    "skills": [
+      {
+        "name": "javascript",
+        "number": 4,
+        "displayName": "JavaScript",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "c",
+        "number": 3,
+        "displayName": "C",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "jsx",
+        "number": 3,
+        "displayName": "JSX",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "html",
+        "number": 4,
+        "displayName": "HTML5",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "soap",
+        "number": 3,
+        "displayName": "SOAP",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "rest",
+        "number": 3,
+        "displayName": "REST",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "apex",
+        "number": 3,
+        "displayName": "Apex",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "ruby",
+        "number": 1,
+        "displayName": "Ruby",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "spring",
+        "number": 2,
+        "displayName": "Spring",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "java",
+        "number": 3,
+        "displayName": "Java",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "react",
+        "number": 4,
+        "displayName": "ReactJS",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "aws",
+        "number": 2,
+        "displayName": "AWS",
+        "group": "dm",
+        "groupDisplayName": "Data Management"
+      },
+      {
+        "name": "grails",
+        "number": 2,
+        "displayName": "Grails",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "groovy",
+        "number": 2,
+        "displayName": "Groovy",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      }
+    ]
+  },
+  {
+    "name": "Ian Kelleher",
+    "email": "ikelleher@deloitte.ie",
+    "level": "Consultant",
+    "dept": "Deloitte Digital",
+    "currentAss": "Merck",
+    "endDate": "15.02.19",
+    "assHistory": [
+      {
+        "order": 0,
+        "name": "eir"
+      },
+      {
+        "order": 1,
+        "name": "Novartis"
+      },
+      {
+        "order": 2,
+        "name": "Allianz"
+      },
+      {
+        "order": 3,
+        "name": "Paddy Power"
+      }
+    ],
+    "skills": [
+      {
+        "name": "javascript",
+        "number": 4,
+        "displayName": "JavaScript",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "c",
+        "number": 3,
+        "displayName": "C",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "jsx",
+        "number": 3,
+        "displayName": "JSX",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "html",
+        "number": 4,
+        "displayName": "HTML5",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "soap",
+        "number": 3,
+        "displayName": "SOAP",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "rest",
+        "number": 3,
+        "displayName": "REST",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "apex",
+        "number": 3,
+        "displayName": "Apex",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "ruby",
+        "number": 1,
+        "displayName": "Ruby",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "spring",
+        "number": 2,
+        "displayName": "Spring",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "java",
+        "number": 3,
+        "displayName": "Java",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "react",
+        "number": 4,
+        "displayName": "ReactJS",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "aws",
+        "number": 2,
+        "displayName": "AWS",
+        "group": "dm",
+        "groupDisplayName": "Data Management"
+      },
+      {
+        "name": "grails",
+        "number": 2,
+        "displayName": "Grails",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "groovy",
+        "number": 2,
+        "displayName": "Groovy",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      }
+    ]
+  },
+  {
+    "name": "Ian Kelleher",
+    "email": "ikelleher@deloitte.ie",
+    "level": "Consultant",
+    "dept": "Deloitte Digital",
+    "currentAss": "Merck",
+    "endDate": "15.02.19",
+    "assHistory": [
+      {
+        "order": 0,
+        "name": "eir"
+      },
+      {
+        "order": 1,
+        "name": "Novartis"
+      },
+      {
+        "order": 2,
+        "name": "Allianz"
+      },
+      {
+        "order": 3,
+        "name": "Paddy Power"
+      }
+    ],
+    "skills": [
+      {
+        "name": "javascript",
+        "number": 4,
+        "displayName": "JavaScript",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "c",
+        "number": 3,
+        "displayName": "C",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "jsx",
+        "number": 3,
+        "displayName": "JSX",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "html",
+        "number": 4,
+        "displayName": "HTML5",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "soap",
+        "number": 3,
+        "displayName": "SOAP",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "rest",
+        "number": 3,
+        "displayName": "REST",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "apex",
+        "number": 3,
+        "displayName": "Apex",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "ruby",
+        "number": 1,
+        "displayName": "Ruby",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "spring",
+        "number": 2,
+        "displayName": "Spring",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "java",
+        "number": 3,
+        "displayName": "Java",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "react",
+        "number": 4,
+        "displayName": "ReactJS",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "aws",
+        "number": 2,
+        "displayName": "AWS",
+        "group": "dm",
+        "groupDisplayName": "Data Management"
+      },
+      {
+        "name": "grails",
+        "number": 2,
+        "displayName": "Grails",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "groovy",
+        "number": 2,
+        "displayName": "Groovy",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      }
+    ]
+  },
+  {
+    "name": "Ian Kelleher",
+    "email": "ikelleher@deloitte.ie",
+    "level": "Consultant",
+    "dept": "Deloitte Digital",
+    "currentAss": "Merck",
+    "endDate": "15.02.19",
+    "assHistory": [
+      {
+        "order": 0,
+        "name": "eir"
+      },
+      {
+        "order": 1,
+        "name": "Novartis"
+      },
+      {
+        "order": 2,
+        "name": "Allianz"
+      },
+      {
+        "order": 3,
+        "name": "Paddy Power"
+      }
+    ],
+    "skills": [
+      {
+        "name": "javascript",
+        "number": 4,
+        "displayName": "JavaScript",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "c",
+        "number": 3,
+        "displayName": "C",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "jsx",
+        "number": 3,
+        "displayName": "JSX",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "html",
+        "number": 4,
+        "displayName": "HTML5",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "soap",
+        "number": 3,
+        "displayName": "SOAP",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "rest",
+        "number": 3,
+        "displayName": "REST",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "apex",
+        "number": 3,
+        "displayName": "Apex",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "ruby",
+        "number": 1,
+        "displayName": "Ruby",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "spring",
+        "number": 2,
+        "displayName": "Spring",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "java",
+        "number": 3,
+        "displayName": "Java",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "react",
+        "number": 4,
+        "displayName": "ReactJS",
+        "group": "fel",
+        "groupDisplayName": "Front End Languages"
+      },
+      {
+        "name": "aws",
+        "number": 2,
+        "displayName": "AWS",
+        "group": "dm",
+        "groupDisplayName": "Data Management"
+      },
+      {
+        "name": "grails",
+        "number": 2,
+        "displayName": "Grails",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      },
+      {
+        "name": "groovy",
+        "number": 2,
+        "displayName": "Groovy",
+        "group": "cl",
+        "groupDisplayName": "Core Languages"
+      }
+    ]
+  }
 ]
