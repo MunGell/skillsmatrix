@@ -1,13 +1,13 @@
 body {
   font-family: Arial;
-  transform: translateZ(0); 
+  transform: translateZ(0);
   margin: 5px;
   display: block;
   height: 100vh;
   width: 100vw;
 }
 
-@media (max-width: 800px) and (orientation:portrait) {
+@media (max-width: 800px) and (orientation: portrait) {
   body {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -17,13 +17,13 @@ body {
   }
 }
 
-@media (max-width: 800px) and (orientation:landscape) {
+@media (max-width: 800px) and (orientation: landscape) {
   body {
-     -webkit-transform: rotate(0deg);
-     -moz-transform: rotate(0deg);
-     -o-transform: rotate(0deg);
-     -ms-transform: rotate(0deg);
-     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 
@@ -60,7 +60,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.05);
   text-align: center;
   cursor: pointer;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   background-color: rgba(0, 128, 128, 0.6);
 }
 
@@ -100,66 +100,68 @@ body {
 }
 
 .cell:nth-child(1) .element,
-.cell:nth-child(-n+2) .element,
+.cell:nth-child(-n + 2) .element,
 .periodic-row:nth-child(1) .cell:nth-child(5) .element {
   background-color: rgba(64, 192, 0, 0.6);
 }
 .cell:nth-child(1):hover .element,
-.cell:nth-child(-n+2):hover .element {
+.cell:nth-child(-n + 2):hover .element {
   background-color: rgba(64, 192, 0, 0.9);
 }
 
-.periodic-row:nth-child(1) .cell:nth-child(n+17) .element,
-.periodic-row:nth-child(2) .cell:nth-child(n+13) .element,
-.periodic-row:nth-child(3) .cell:nth-child(n+14) .element,
-.periodic-row:nth-child(4) .cell:nth-child(n+14) .element,
-.periodic-row:nth-child(5) .cell:nth-child(n+15) .element,
-.periodic-row:nth-child(6) .cell:nth-child(n+16) .element,
-.periodic-row:nth-child(7) .cell:nth-child(n+17) .element,
+.periodic-row:nth-child(1) .cell:nth-child(n + 17) .element,
+.periodic-row:nth-child(2) .cell:nth-child(n + 13) .element,
+.periodic-row:nth-child(3) .cell:nth-child(n + 14) .element,
+.periodic-row:nth-child(4) .cell:nth-child(n + 14) .element,
+.periodic-row:nth-child(5) .cell:nth-child(n + 15) .element,
+.periodic-row:nth-child(6) .cell:nth-child(n + 16) .element,
+.periodic-row:nth-child(7) .cell:nth-child(n + 17) .element,
 .periodic-row:nth-child(1) .cell:nth-child(6) .element {
   background-color: rgba(0, 192, 100, 0.6);
 }
-.periodic-row:nth-child(1) .cell:nth-child(n+17):hover .element,
-.periodic-row:nth-child(2) .cell:nth-child(n+13):hover .element,
-.periodic-row:nth-child(3) .cell:nth-child(n+14):hover .element,
-.periodic-row:nth-child(4) .cell:nth-child(n+14):hover .element,
-.periodic-row:nth-child(5) .cell:nth-child(n+15):hover .element,
-.periodic-row:nth-child(6) .cell:nth-child(n+16):hover .element,
-.periodic-row:nth-child(7) .cell:nth-child(n+17):hover .element {
+.periodic-row:nth-child(1) .cell:nth-child(n + 17):hover .element,
+.periodic-row:nth-child(2) .cell:nth-child(n + 13):hover .element,
+.periodic-row:nth-child(3) .cell:nth-child(n + 14):hover .element,
+.periodic-row:nth-child(4) .cell:nth-child(n + 14):hover .element,
+.periodic-row:nth-child(5) .cell:nth-child(n + 15):hover .element,
+.periodic-row:nth-child(6) .cell:nth-child(n + 16):hover .element,
+.periodic-row:nth-child(7) .cell:nth-child(n + 17):hover .element {
   background-color: rgba(0, 192, 100, 0.9);
 }
 
-.cell:nth-child(n+13) .element,
+.cell:nth-child(n + 13) .element,
 .periodic-row:nth-child(1) .cell:nth-child(7) .element {
   background-color: rgba(0, 60, 96, 0.6);
 }
-.cell:nth-child(n+13):hover .element {
+.cell:nth-child(n + 13):hover .element {
   background-color: rgba(0, 60, 96, 0.9);
 }
 
-.periodic-row:nth-child(9) .cell:nth-child(-n+13) .element,
+.periodic-row:nth-child(9) .cell:nth-child(-n + 13) .element,
 .periodic-row:nth-child(1) .cell:nth-child(10) .element {
   background-color: rgba(0, 96, 160, 0.6);
 }
-.periodic-row:nth-child(9) .cell:nth-child(-n+13):hover .element {
+.periodic-row:nth-child(9) .cell:nth-child(-n + 13):hover .element {
   background-color: rgba(0, 96, 160, 0.9);
 }
 
-.periodic-row:nth-child(7) .cell:nth-child(n+3):nth-child(-n+12) .element,
+.periodic-row:nth-child(7) .cell:nth-child(n + 3):nth-child(-n + 12) .element,
 .periodic-row:nth-child(1) .cell:nth-child(9) .element {
   background-color: rgba(200, 96, 160, 0.6);
 }
-.periodic-row:nth-child(7) .cell:nth-child(n+3):nth-child(-n+12):hover .element {
+.periodic-row:nth-child(7)
+  .cell:nth-child(n + 3):nth-child(-n + 12):hover
+  .element {
   background-color: rgba(200, 96, 160, 0.9);
 }
 
-.periodic-row:nth-child(n+9) .cell:nth-child(n+13) .element ,
-.periodic-row:nth-child(n+10) .cell .element,
+.periodic-row:nth-child(n + 9) .cell:nth-child(n + 13) .element,
+.periodic-row:nth-child(n + 10) .cell .element,
 .periodic-row:nth-child(1) .cell:nth-child(11) .element {
   background-color: rgba(100, 96, 160, 0.6);
 }
-.periodic-row:nth-child(n+9) .cell:nth-child(n+13):hover .element ,
-.periodic-row:nth-child(n+10) .cell:hover .element {
+.periodic-row:nth-child(n + 9) .cell:nth-child(n + 13):hover .element,
+.periodic-row:nth-child(n + 10) .cell:hover .element {
   background-color: rgba(100, 96, 160, 0.9);
 }
 
@@ -199,9 +201,9 @@ body {
   right: 1px;
   bottom: 1px;
 }
- 
-.at_num{
-  font-size: 10px; 
+
+.at_num {
+  font-size: 10px;
 }
 
 .at_details {

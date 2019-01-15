@@ -1,828 +1,828 @@
 [
-	{
-		"name" : "javascript",
-		"number" : 35,
-		"displayName" : "JavaScript",
-		"group" : "fel",
-		"groupDisplayName" : "Front End Languages"
-	},
-	{
-		"name" : "c",
-		"number" : 23,
-		"displayName" : "C",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "jsx",
-		"number" : 18,
-		"displayName" : "JSX",
-		"group" : "fel",
-		"groupDisplayName" : "Front End Languages"
-	},
-	{
-		"name" : "html",
-		"number" : 39,
-		"displayName" : "HTML5",
-		"group" : "fel",
-		"groupDisplayName" : "Front End Languages"
-	},
-	{
-		"name" : "soap",
-		"number" : 21,
-		"displayName" : "SOAP",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "rest",
-		"number" : 12,
-		"displayName" : "REST",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "apex",
-		"number" : 12,
-		"displayName" : "Apex",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "ruby",
-		"number" : 21,
-		"displayName" : "Ruby",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "spring",
-		"number" : 21,
-		"displayName" : "Spring",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "java",
-		"number" : 19,
-		"displayName" : "Java",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "react",
-		"number" : 12,
-		"displayName" : "ReactJS",
-		"group" : "fel",
-		"groupDisplayName" : "Front End Languages"
-	},
-	{
-		"name" : "xml",
-		"number" : 34,
-		"displayName" : "XML",
-		"group" : "fel",
-		"groupDisplayName" : "Front End Languages"
-	},
-	{
-		"name" : "aws",
-		"number" : 12,
-		"displayName" : "AWS",
-		"group" : "dm",
-		"groupDisplayName" : "Data Management"
-	},
-	{
-		"name" : "django",
-		"number" : 23,
-		"displayName" : "Django",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "perl",
-		"number" : 21,
-		"displayName" : "Perl",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "grails",
-		"number" : 11,
-		"displayName" : "Grails",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "groovy",
-		"number" : 7,
-		"displayName" : "Groovy",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "scala",
-		"number" : 8,
-		"displayName" : "Scala",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "css",
-		"number" : 46,
-		"displayName" : "CSS",
-		"group" : "fel",
-		"groupDisplayName" : "Front End Languages"
-	},
-	{
-		"name" : "react_nat",
-		"number" : 7,
-		"displayName" : "React Native",
-		"group" : "fel",
-		"groupDisplayName" : "Front End Languages"
-	},
-	{
-		"name" : "jquery",
-		"number" : 25,
-		"displayName" : "jQuery",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "node",
-		"number" : 26,
-		"displayName" : "Node.js",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "bootstrap",
-		"number" : 18,
-		"displayName" : "Bootstrap",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "webpack",
-		"number" : 18,
-		"displayName" : "Webpack",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "ajax",
-		"number" : 16,
-		"displayName" : "AJAX",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "grunt",
-		"number" : 15,
-		"displayName" : "Grunt",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "maven",
-		"number" : 13,
-		"displayName" : "Maven",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "gradle",
-		"number" : 12,
-		"displayName" : "Gradle",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "gulp",
-		"number" : 13,
-		"displayName" : "Gulp",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "git",
-		"number" : 14,
-		"displayName" : "Git",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "solidity",
-		"number" : 12,
-		"displayName" : "Solidity",
-		"group" : "dm",
-		"groupDisplayName" : "Data Management"
-	},
-	{
-		"name" : "jsp",
-		"number" : 13,
-		"displayName" : "JSP",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "json",
-		"number" : 13,
-		"displayName" : "JSON",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "obj_c",
-		"number" : 2,
-		"displayName" : "Objective C",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "c#",
-		"number" : 4,
-		"displayName" : "C#",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "c++",
-		"number" : 12,
-		"displayName" : "C++",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "angular",
-		"number" : 12,
-		"displayName" : "AngularJS",
-		"group" : "fel",
-		"groupDisplayName" : "Front End Languages"
-	},
-	{
-		"name" : "sass",
-		"number" : 23,
-		"displayName" : "SASS",
-		"group" : "fel",
-		"groupDisplayName" : "Front End Languages"
-	},
-	{
-		"name" : "vue",
-		"number" : 2,
-		"displayName" : "Vue.js",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "foundation",
-		"number" : 21,
-		"displayName" : "Foundation",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "ionic",
-		"number" : 11,
-		"displayName" : "Ionic",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "laravel",
-		"number" : 12,
-		"displayName" : "Laravel",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "typescript",
-		"number" : 12,
-		"displayName" : "TypeScript",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "rendr",
-		"number" : 11,
-		"displayName" : "Rendr",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "meteor",
-		"number" : 14,
-		"displayName" : "MeteorJS",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "aurelia",
-		"number" : 13,
-		"displayName" : "Aurelia",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "android",
-		"number" : 16,
-		"displayName" : "Android",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "ant",
-		"number" : 6,
-		"displayName" : "Ant",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "hyperledger",
-		"number" : 6,
-		"displayName" : "Hyperledger",
-	    "group" : "dm",
-	    "groupDisplayName" : "Data Management"
-	},
-	{
-		"name" : "simplicity",
-		"number" : 6,
-		"displayName" : "Simplicity",
-		"group" : "dm",
-		"groupDisplayName" : "Data Management"
-	},
-	{
-		"name" : "matlab",
-		"number" : 6,
-		"displayName" : "MATLAB",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "low_code",
-		"number" : 6,
-		"displayName" : "Low-code",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "swift",
-		"number" : 6,
-		"displayName" : "Swift",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "asp_net",
-		"number" : 6,
-		"displayName" : "ASP.NET",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "aura",
-		"number" : 6,
-		"displayName" : "Aura",
-		"group" : "fel",
-		"groupDisplayName" : "Front End Languages"
-	},
-	{
-		"name" : "visualforce",
-		"number" : 6,
-		"displayName" : "Visualforce",
-		"group" : "fel",
-		"groupDisplayName" : "Front End Languages"
-	},
-	{
-		"name" : "electron",
-		"number" : 7,
-		"displayName" : "Electron",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "ember",
-		"number" : 7,
-		"displayName" : "Ember.js",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "cordova",
-		"number" : 7,
-		"displayName" : "Cordova",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-	    "name" : "backbone",
-	    "number" : 7,
-		"displayName" : "Backbone.js",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "liferay",
-		"number" : 7,
-		"displayName" : "Liferay",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "unity",
-		"number" : 7,
-		"displayName" : "Unity",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "vuforia",
-		"number" : 7,
-		"displayName" : "Vuforia",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "hibernate",
-		"number" : 7,
-		"displayName" : "Hibernate",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "linux",
-		"number" : 7,
-		"displayName" : "Linux",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "jenkins",
-		"number" : 14,
-		"displayName" : "Jenkins",
-		"group" : "fbt",
-		"groupDisplayName" : "Frameworks / Build Tools"
-	},
-	{
-		"name" : "heroku",
-		"number" : 4,
-		"displayName" : "Heroku",
-		"group" : "dm",
-		"groupDisplayName" : "Data Management"
-	},
-	{
-		"name" : "r",
-		"number" : 4,
-		"displayName" : "R",
-		"group" : "dm",
-		"groupDisplayName" : "Data Management"
-	},
-	{
-		"name" : "cobalt",
-		"number" : 4,
-		"displayName" : "Cobalt",
-		"group" : "dm",
-		"groupDisplayName" : "Data Management"
-	},
-	{
-		"name" : "python",
-		"number" : 4,
-		"displayName" : "Python",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "php",
-		"number" : 14,
-		"displayName" : "PHP",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "cobol",
-		"number" : 4,
-		"displayName" : "COBOL",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "sencha",
-		"number" : 4,
-		"displayName" : "Sencha",
-		"group" : "fel",
-		"groupDisplayName" : "Front End Languages"
-	},
-	{
-		"name" : "es6",
-		"number" : 4,
-		"displayName" : "ES6",
-		"group" : "fel",
-		"groupDisplayName" : "Front End Languages"
-	},
-	{
-		"name" : "jmeter",
-		"number" : 3,
-		"displayName" : "JMeter",
-		"group" : "ta",
-		"groupDisplayName" : "Testing Automation"
-	},
-	{
-		"name" : "cucumber",
-		"number" : 3,
-		"displayName" : "Cucumber",
-		"group" : "ta",
-		"groupDisplayName" : "Testing Automation"
-	},
-	{
-		"name" : "karma",
-		"number" : 3,
-		"displayName" : "Karma",
-		"group" : "ta",
-		"groupDisplayName" : "Testing Automation"
-	},
-	{
-		"name" : "selenium",
-		"number" : 3,
-		"displayName" : "Selenium",
-		"group" : "ta",
-		"groupDisplayName" : "Testing Automation"
-	},
-	{
-		"name" : "junit",
-		"number" : 3,
-		"displayName" : "JUnit",
-		"group" : "ta",
-		"groupDisplayName" : "Testing Automation"
-	},
-	{
-		"name" : "travis",
-		"number" : 3,
-		"displayName" : "Travis",
-		"group" : "ta",
-		"groupDisplayName" : "Testing Automation"
-	},
-	{
-		"name" : "bamboo",
-		"number" : 3,
-		"displayName" : "Bamboo",
-		"group" : "ta",
-		"groupDisplayName" : "Testing Automation"
-	},
-	{
-		"name" : "mocha",
-		"number" : 3,
-		"displayName" : "Mocha",
-		"group" : "ta",
-		"groupDisplayName" : "Testing Automation"
-	},
-	{
-		"name" : "jasmine",
-		"number" : 3,
-		"displayName" : "Jasmine",
-		"group" : "ta",
-		"groupDisplayName" : "Testing Automation"
-	},
-	{
-		"name" : "zephyr",
-		"number" : 4,
-		"displayName" : "Zephyr",
-		"group" : "ta",
-		"groupDisplayName" : "Testing Automation"
-	},
-	{
-		"name" : "cassandra",
-		"number" : 4,
-		"displayName" : "Cassandra",
-		"group" : "dm",
-		"groupDisplayName" : "Data Management"
-	},
-	{
-		"name" : "maria",
-		"number" : 14,
-		"displayName" : "MariaDB",
-		"group" : "dm",
-		"groupDisplayName" : "Data Management"
-	},
-	{
-		"name" : "mongo",
-		"number" : 14,
-		"displayName" : "MongoDB",
-		"group" : "dm",
-		"groupDisplayName" : "Data Management"
-	},
-	{
-		"name" : "sql",
-		"number" : 24,
-		"displayName" : "SQL",
-		"group" : "dm",
-		"groupDisplayName" : "Data Management"
-	},
-	{
-		"name" : "visual_basic",
-		"number" : 4,
-		"displayName" : "Visual Basic",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "assembly",
-		"number" : 4,
-		"displayName" : "Assembly",
-		"group" : "cl",
-		"groupDisplayName" : "Core Languages"
-	},
-	{
-		"name" : "jira",
-		"number" : 24,
-		"displayName" : "Jira",
-		"group" : "ss",
-		"groupDisplayName" : "Supporting Software"
-	},
-	{
-		"name" : "confluence",
-		"number" : 24,
-		"displayName" : "Confluence",
-		"group" : "ss",
-		"groupDisplayName" : "Supporting Software"
-	},
-	{
-		"name" : "sketch",
-		"number" : 7,
-		"displayName" : "Sketch",
-		"group" : "ss",
-		"groupDisplayName" : "Supporting Software"
-	},
-	{
-		"name" : "webflow",
-		"number" : 7,
-		"displayName" : "Webflow",
-		"group" : "ss",
-		"groupDisplayName" : "Supporting Software"
-	},
-	{
-		"name" : "balsamiq",
-		"number" : 7,
-		"displayName" : "Balsamiq",
-		"group" : "ss",
-		"groupDisplayName" : "Supporting Software"
-	},
-	{
-		"name" : "tableau",
-		"number" : 7,
-		"displayName" : "Tableau",
-		"group" : "ss",
-		"groupDisplayName" : "Supporting Software"
-	},
-	{
-		"name" : "open_cms",
-		"number" : 7,
-		"displayName" : "Open CMS",
-		"group" : "ss",
-		"groupDisplayName" : "Supporting Software"
-	},
-	{
-		"name" : "invision",
-		"number" : 7,
-		"displayName" : "InVision",
-		"group" : "ss",
-		"groupDisplayName" : "Supporting Software"
-	},
-	{
-		"name" : "photoshop",
-		"number" : 7,
-		"displayName" : "Photoshop",
-		"group" : "ss",
-		"groupDisplayName" : "Supporting Software"
-	},
-	{
-		"name" : "sharepoint",
-		"number" : 7,
-		"displayName" : "SharePoint",
-		"group" : "ss",
-		"groupDisplayName" : "Supporting Software"
-	},
-	{
-		"name" : "adobe",
-		"number" : 7,
-		"displayName" : "Adobe",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	},
-	{
-		"name" : "wordpress",
-		"number" : 5,
-		"displayName" : "WordPress",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	},
-	{
-		"name" : "google_cloud",
-		"number" : 5,
-		"displayName" : "Google Cloud",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	},
-	{
-		"name" : "drupal",
-		"number" : 5,
-		"displayName" : "Drupal",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	},
-	{
-		"name" : "maximo",
-		"number" : 5,
-		"displayName" : "Maximo",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	},
-	{
-		"name" : "sap",
-		"number" : 5,
-		"displayName" : "SAP",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	},
-	{
-		"name" : "oracle",
-		"number" : 5,
-		"displayName" : "Oracle",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	},
-	{
-		"name" : "hadoop",
-		"number" : 5,
-		"displayName" : "Hadoop",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	},
-	{
-		"name" : "ar",
-		"number" : 5,
-		"displayName" : "Augmented Reality",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	},
-	{
-		"name" : "iot",
-		"number" : 5,
-		"displayName" : "IoT",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	},
-	{
-		"name" : "machine_learning",
-		"number" : 5,
-		"displayName" : "Machine Learning",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	},
-	{
-		"name" : "workday",
-		"number" : 5,
-		"displayName" : "Workday",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	},
-	{
-		"name" : "rpa",
-		"number" : 5,
-		"displayName" : "RPA",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	},
-	{
-		"name" : "blockchain",
-		"number" : 5,
-		"displayName" : "Blockchain",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	},
-	{
-		"name" : "azure",
-		"number" : 5,
-		"displayName" : "Azure",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	},
-	{
-		"name" : "vr",
-		"number" : 5,
-		"displayName" : "Virtual Reality",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	},
-	{
-		"name" : "ai",
-		"number" : 5,
-		"displayName" : "Artifical Intelligence",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	},
-	{
-		"name" : "sf",
-		"number" : 5,
-		"displayName" : "Salesforce Lightning",
-		"group" : "pc",
-		"groupDisplayName" : "Platform Capabilities"
-	}
+  {
+    "name": "javascript",
+    "number": 35,
+    "displayName": "JavaScript",
+    "group": "fel",
+    "groupDisplayName": "Front End Languages"
+  },
+  {
+    "name": "c",
+    "number": 23,
+    "displayName": "C",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "jsx",
+    "number": 18,
+    "displayName": "JSX",
+    "group": "fel",
+    "groupDisplayName": "Front End Languages"
+  },
+  {
+    "name": "html",
+    "number": 39,
+    "displayName": "HTML5",
+    "group": "fel",
+    "groupDisplayName": "Front End Languages"
+  },
+  {
+    "name": "soap",
+    "number": 21,
+    "displayName": "SOAP",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "rest",
+    "number": 12,
+    "displayName": "REST",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "apex",
+    "number": 12,
+    "displayName": "Apex",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "ruby",
+    "number": 21,
+    "displayName": "Ruby",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "spring",
+    "number": 21,
+    "displayName": "Spring",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "java",
+    "number": 19,
+    "displayName": "Java",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "react",
+    "number": 12,
+    "displayName": "ReactJS",
+    "group": "fel",
+    "groupDisplayName": "Front End Languages"
+  },
+  {
+    "name": "xml",
+    "number": 34,
+    "displayName": "XML",
+    "group": "fel",
+    "groupDisplayName": "Front End Languages"
+  },
+  {
+    "name": "aws",
+    "number": 12,
+    "displayName": "AWS",
+    "group": "dm",
+    "groupDisplayName": "Data Management"
+  },
+  {
+    "name": "django",
+    "number": 23,
+    "displayName": "Django",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "perl",
+    "number": 21,
+    "displayName": "Perl",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "grails",
+    "number": 11,
+    "displayName": "Grails",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "groovy",
+    "number": 7,
+    "displayName": "Groovy",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "scala",
+    "number": 8,
+    "displayName": "Scala",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "css",
+    "number": 46,
+    "displayName": "CSS",
+    "group": "fel",
+    "groupDisplayName": "Front End Languages"
+  },
+  {
+    "name": "react_nat",
+    "number": 7,
+    "displayName": "React Native",
+    "group": "fel",
+    "groupDisplayName": "Front End Languages"
+  },
+  {
+    "name": "jquery",
+    "number": 25,
+    "displayName": "jQuery",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "node",
+    "number": 26,
+    "displayName": "Node.js",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "bootstrap",
+    "number": 18,
+    "displayName": "Bootstrap",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "webpack",
+    "number": 18,
+    "displayName": "Webpack",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "ajax",
+    "number": 16,
+    "displayName": "AJAX",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "grunt",
+    "number": 15,
+    "displayName": "Grunt",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "maven",
+    "number": 13,
+    "displayName": "Maven",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "gradle",
+    "number": 12,
+    "displayName": "Gradle",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "gulp",
+    "number": 13,
+    "displayName": "Gulp",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "git",
+    "number": 14,
+    "displayName": "Git",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "solidity",
+    "number": 12,
+    "displayName": "Solidity",
+    "group": "dm",
+    "groupDisplayName": "Data Management"
+  },
+  {
+    "name": "jsp",
+    "number": 13,
+    "displayName": "JSP",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "json",
+    "number": 13,
+    "displayName": "JSON",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "obj_c",
+    "number": 2,
+    "displayName": "Objective C",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "c#",
+    "number": 4,
+    "displayName": "C#",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "c++",
+    "number": 12,
+    "displayName": "C++",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "angular",
+    "number": 12,
+    "displayName": "AngularJS",
+    "group": "fel",
+    "groupDisplayName": "Front End Languages"
+  },
+  {
+    "name": "sass",
+    "number": 23,
+    "displayName": "SASS",
+    "group": "fel",
+    "groupDisplayName": "Front End Languages"
+  },
+  {
+    "name": "vue",
+    "number": 2,
+    "displayName": "Vue.js",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "foundation",
+    "number": 21,
+    "displayName": "Foundation",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "ionic",
+    "number": 11,
+    "displayName": "Ionic",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "laravel",
+    "number": 12,
+    "displayName": "Laravel",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "typescript",
+    "number": 12,
+    "displayName": "TypeScript",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "rendr",
+    "number": 11,
+    "displayName": "Rendr",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "meteor",
+    "number": 14,
+    "displayName": "MeteorJS",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "aurelia",
+    "number": 13,
+    "displayName": "Aurelia",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "android",
+    "number": 16,
+    "displayName": "Android",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "ant",
+    "number": 6,
+    "displayName": "Ant",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "hyperledger",
+    "number": 6,
+    "displayName": "Hyperledger",
+    "group": "dm",
+    "groupDisplayName": "Data Management"
+  },
+  {
+    "name": "simplicity",
+    "number": 6,
+    "displayName": "Simplicity",
+    "group": "dm",
+    "groupDisplayName": "Data Management"
+  },
+  {
+    "name": "matlab",
+    "number": 6,
+    "displayName": "MATLAB",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "low_code",
+    "number": 6,
+    "displayName": "Low-code",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "swift",
+    "number": 6,
+    "displayName": "Swift",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "asp_net",
+    "number": 6,
+    "displayName": "ASP.NET",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "aura",
+    "number": 6,
+    "displayName": "Aura",
+    "group": "fel",
+    "groupDisplayName": "Front End Languages"
+  },
+  {
+    "name": "visualforce",
+    "number": 6,
+    "displayName": "Visualforce",
+    "group": "fel",
+    "groupDisplayName": "Front End Languages"
+  },
+  {
+    "name": "electron",
+    "number": 7,
+    "displayName": "Electron",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "ember",
+    "number": 7,
+    "displayName": "Ember.js",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "cordova",
+    "number": 7,
+    "displayName": "Cordova",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "backbone",
+    "number": 7,
+    "displayName": "Backbone.js",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "liferay",
+    "number": 7,
+    "displayName": "Liferay",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "unity",
+    "number": 7,
+    "displayName": "Unity",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "vuforia",
+    "number": 7,
+    "displayName": "Vuforia",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "hibernate",
+    "number": 7,
+    "displayName": "Hibernate",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "linux",
+    "number": 7,
+    "displayName": "Linux",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "jenkins",
+    "number": 14,
+    "displayName": "Jenkins",
+    "group": "fbt",
+    "groupDisplayName": "Frameworks / Build Tools"
+  },
+  {
+    "name": "heroku",
+    "number": 4,
+    "displayName": "Heroku",
+    "group": "dm",
+    "groupDisplayName": "Data Management"
+  },
+  {
+    "name": "r",
+    "number": 4,
+    "displayName": "R",
+    "group": "dm",
+    "groupDisplayName": "Data Management"
+  },
+  {
+    "name": "cobalt",
+    "number": 4,
+    "displayName": "Cobalt",
+    "group": "dm",
+    "groupDisplayName": "Data Management"
+  },
+  {
+    "name": "python",
+    "number": 4,
+    "displayName": "Python",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "php",
+    "number": 14,
+    "displayName": "PHP",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "cobol",
+    "number": 4,
+    "displayName": "COBOL",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "sencha",
+    "number": 4,
+    "displayName": "Sencha",
+    "group": "fel",
+    "groupDisplayName": "Front End Languages"
+  },
+  {
+    "name": "es6",
+    "number": 4,
+    "displayName": "ES6",
+    "group": "fel",
+    "groupDisplayName": "Front End Languages"
+  },
+  {
+    "name": "jmeter",
+    "number": 3,
+    "displayName": "JMeter",
+    "group": "ta",
+    "groupDisplayName": "Testing Automation"
+  },
+  {
+    "name": "cucumber",
+    "number": 3,
+    "displayName": "Cucumber",
+    "group": "ta",
+    "groupDisplayName": "Testing Automation"
+  },
+  {
+    "name": "karma",
+    "number": 3,
+    "displayName": "Karma",
+    "group": "ta",
+    "groupDisplayName": "Testing Automation"
+  },
+  {
+    "name": "selenium",
+    "number": 3,
+    "displayName": "Selenium",
+    "group": "ta",
+    "groupDisplayName": "Testing Automation"
+  },
+  {
+    "name": "junit",
+    "number": 3,
+    "displayName": "JUnit",
+    "group": "ta",
+    "groupDisplayName": "Testing Automation"
+  },
+  {
+    "name": "travis",
+    "number": 3,
+    "displayName": "Travis",
+    "group": "ta",
+    "groupDisplayName": "Testing Automation"
+  },
+  {
+    "name": "bamboo",
+    "number": 3,
+    "displayName": "Bamboo",
+    "group": "ta",
+    "groupDisplayName": "Testing Automation"
+  },
+  {
+    "name": "mocha",
+    "number": 3,
+    "displayName": "Mocha",
+    "group": "ta",
+    "groupDisplayName": "Testing Automation"
+  },
+  {
+    "name": "jasmine",
+    "number": 3,
+    "displayName": "Jasmine",
+    "group": "ta",
+    "groupDisplayName": "Testing Automation"
+  },
+  {
+    "name": "zephyr",
+    "number": 4,
+    "displayName": "Zephyr",
+    "group": "ta",
+    "groupDisplayName": "Testing Automation"
+  },
+  {
+    "name": "cassandra",
+    "number": 4,
+    "displayName": "Cassandra",
+    "group": "dm",
+    "groupDisplayName": "Data Management"
+  },
+  {
+    "name": "maria",
+    "number": 14,
+    "displayName": "MariaDB",
+    "group": "dm",
+    "groupDisplayName": "Data Management"
+  },
+  {
+    "name": "mongo",
+    "number": 14,
+    "displayName": "MongoDB",
+    "group": "dm",
+    "groupDisplayName": "Data Management"
+  },
+  {
+    "name": "sql",
+    "number": 24,
+    "displayName": "SQL",
+    "group": "dm",
+    "groupDisplayName": "Data Management"
+  },
+  {
+    "name": "visual_basic",
+    "number": 4,
+    "displayName": "Visual Basic",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "assembly",
+    "number": 4,
+    "displayName": "Assembly",
+    "group": "cl",
+    "groupDisplayName": "Core Languages"
+  },
+  {
+    "name": "jira",
+    "number": 24,
+    "displayName": "Jira",
+    "group": "ss",
+    "groupDisplayName": "Supporting Software"
+  },
+  {
+    "name": "confluence",
+    "number": 24,
+    "displayName": "Confluence",
+    "group": "ss",
+    "groupDisplayName": "Supporting Software"
+  },
+  {
+    "name": "sketch",
+    "number": 7,
+    "displayName": "Sketch",
+    "group": "ss",
+    "groupDisplayName": "Supporting Software"
+  },
+  {
+    "name": "webflow",
+    "number": 7,
+    "displayName": "Webflow",
+    "group": "ss",
+    "groupDisplayName": "Supporting Software"
+  },
+  {
+    "name": "balsamiq",
+    "number": 7,
+    "displayName": "Balsamiq",
+    "group": "ss",
+    "groupDisplayName": "Supporting Software"
+  },
+  {
+    "name": "tableau",
+    "number": 7,
+    "displayName": "Tableau",
+    "group": "ss",
+    "groupDisplayName": "Supporting Software"
+  },
+  {
+    "name": "open_cms",
+    "number": 7,
+    "displayName": "Open CMS",
+    "group": "ss",
+    "groupDisplayName": "Supporting Software"
+  },
+  {
+    "name": "invision",
+    "number": 7,
+    "displayName": "InVision",
+    "group": "ss",
+    "groupDisplayName": "Supporting Software"
+  },
+  {
+    "name": "photoshop",
+    "number": 7,
+    "displayName": "Photoshop",
+    "group": "ss",
+    "groupDisplayName": "Supporting Software"
+  },
+  {
+    "name": "sharepoint",
+    "number": 7,
+    "displayName": "SharePoint",
+    "group": "ss",
+    "groupDisplayName": "Supporting Software"
+  },
+  {
+    "name": "adobe",
+    "number": 7,
+    "displayName": "Adobe",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  },
+  {
+    "name": "wordpress",
+    "number": 5,
+    "displayName": "WordPress",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  },
+  {
+    "name": "google_cloud",
+    "number": 5,
+    "displayName": "Google Cloud",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  },
+  {
+    "name": "drupal",
+    "number": 5,
+    "displayName": "Drupal",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  },
+  {
+    "name": "maximo",
+    "number": 5,
+    "displayName": "Maximo",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  },
+  {
+    "name": "sap",
+    "number": 5,
+    "displayName": "SAP",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  },
+  {
+    "name": "oracle",
+    "number": 5,
+    "displayName": "Oracle",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  },
+  {
+    "name": "hadoop",
+    "number": 5,
+    "displayName": "Hadoop",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  },
+  {
+    "name": "ar",
+    "number": 5,
+    "displayName": "Augmented Reality",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  },
+  {
+    "name": "iot",
+    "number": 5,
+    "displayName": "IoT",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  },
+  {
+    "name": "machine_learning",
+    "number": 5,
+    "displayName": "Machine Learning",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  },
+  {
+    "name": "workday",
+    "number": 5,
+    "displayName": "Workday",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  },
+  {
+    "name": "rpa",
+    "number": 5,
+    "displayName": "RPA",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  },
+  {
+    "name": "blockchain",
+    "number": 5,
+    "displayName": "Blockchain",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  },
+  {
+    "name": "azure",
+    "number": 5,
+    "displayName": "Azure",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  },
+  {
+    "name": "vr",
+    "number": 5,
+    "displayName": "Virtual Reality",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  },
+  {
+    "name": "ai",
+    "number": 5,
+    "displayName": "Artifical Intelligence",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  },
+  {
+    "name": "sf",
+    "number": 5,
+    "displayName": "Salesforce Lightning",
+    "group": "pc",
+    "groupDisplayName": "Platform Capabilities"
+  }
 ]
