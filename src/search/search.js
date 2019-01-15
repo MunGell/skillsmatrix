@@ -74,9 +74,10 @@ class Search extends Component {
     }
 
     filterUsers(){
+
         if(this.state.selectedLevels.length === 0 && this.state.selectedDept.length === 0){
            this.setState({
-            selected : this.state.userData
+            filteredUsers : this.state.userData
             }); 
         } else {
 
