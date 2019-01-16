@@ -196,7 +196,7 @@ class Search extends Component {
           nomad<div>.</div>
         </div>
         <div className="mtx-user" onClick={this.onClickUser}>
-          <img src="./user.png"alt="user" />
+          <img src="./user.png" alt="user" />
         </div>
         <div className="mtx-half">
           <div className="mtx-">
@@ -286,7 +286,11 @@ class Search extends Component {
                   >
                     <div className="mtx-sr__top">
                       <div className="mtx-sr__left">
-                        <img className="mtx-sr__picture" src="./pic.png" alt="user" />
+                        <img
+                          className="mtx-sr__picture"
+                          src="./pic.png"
+                          alt="user"
+                        />
                       </div>
                       <div className="mtx-sr__right">
                         <div className="mtx-sr__">
