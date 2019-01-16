@@ -97,7 +97,7 @@ class Table extends Component {
     return (
       <div>
         <div className="mtx-user__home" onClick={this.onClickUser}>
-          <img src="./user.png" />
+          <img src="./user.png" alt="user"/>
         </div>
         <div className="periodic">
           <div className="periodic-row">
