@@ -80,7 +80,6 @@
   padding: 8px;
 }
 
-
 .custom-control-label.checked-bold {
   font-weight: bold !important;
 }
@@ -93,6 +92,7 @@
     width:0.95rem;
     left:.09rem;
 }
+
 .custom-checkbox .custom-control-label::before {
     border-radius: .15rem;
 }
@@ -104,7 +104,6 @@
 .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
     background-image: none;
 }
-
 
 .search-check-input-border::before {
     position: absolute;
@@ -126,4 +125,3 @@
 
 @media (max-width: 680px) {
 }
-
