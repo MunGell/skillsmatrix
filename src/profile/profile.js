@@ -4,7 +4,7 @@ import UserData from '../data/users.json';
 import './_profile.scss';
 import PeriodicTable from '../components/periodicTable/periodicTable.web';
 import TableData from '../data/table.json';
-
+import { find } from 'lodash';
 
 class Profile extends Component {
   constructor(props) {
@@ -15,19 +15,22 @@ class Profile extends Component {
     };
 
     this.onClickHome = this.onClickHome.bind(this);
-
-    
-
-    this.tableData = TableData;
-    this.userSkills = [];
   }
 
   componentWillMount() {
     this.setState({ userData: UserData });
 
-    let user = UserData[0];
-    console.log(user.skills);
+    // For now we just going to take the first user from the mock data to work with.
+    this.user = UserData[0];
 
+    const listSkills = this.user.skills
+      .map(skill => skill.name)
+      .filter(skill => {
+        return !find(listSkills, skill);
+      });
+
+    this.tableData = TableData;
+    this.userSkills = listSkills;
   }
 
   onClickHome() {
@@ -38,7 +41,6 @@ class Profile extends Component {
   render() {
     var user = this.state.userData[0];
 
-    
     return (
       <div>
         <div className="mtx-logo" onClick={this.onClickHome}>
@@ -92,17 +94,25 @@ class Profile extends Component {
                     {i.name}
                   </div>
                 ))}
-              </div> 
-            </div> 
-          </div>  
-        </div> 
-        <div className="mtx-half--bottom"> 
-          <div className="mtx-section"> <div className="heatmap">  <PeriodicTable userSkills={this.userSkills} tableData={this.tableData} /> </div>
-            skills<div>.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mtx-half--bottom">
+          <div>
+            <div className="mtx-section">
+              skills<div>.</div>
+            </div>
+            <div className="heatmap">
+              <PeriodicTable
+                userSkills={this.userSkills}
+                tableData={this.tableData}
+              />
+            </div>
           </div>
           <div className="mtx-block mtx-block--bottom">
-            {user.skills.map(i => (
-              <div className="mtx-skill" key={i.order}>
+            {user.skills.map((i, index) => (
+              <div className="mtx-skill" key={index}>
                 {/*<div className="mtx-section__content">{i.groupDisplayName}</div>*/}
                 <div className="mtx-skill__rating">
                   <div className="mtx-section__header">{i.displayName}</div>
@@ -115,7 +125,7 @@ class Profile extends Component {
                 </div>
               </div>
             ))}
-          </div> 
+          </div>
         </div>
       </div>
     );

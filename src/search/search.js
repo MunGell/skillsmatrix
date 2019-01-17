@@ -6,8 +6,6 @@ import './_search.scss';
 import PeriodicTable from '../components/periodicTable/periodicTable.web';
 import TableData from '../data/table.json';
 
-
-
 class Search extends Component {
   constructor(props) {
     super(props);
@@ -23,7 +21,6 @@ class Search extends Component {
     this.onClickUser = this.onClickUser.bind(this);
     this.onFilterSelect = this.onFilterSelect.bind(this);
   }
-
 
   componentWillMount() {
     this.setState({
@@ -242,9 +239,7 @@ class Search extends Component {
                         id={level}
                       />
                       <label className="custom-control-label" htmlFor={level}>
-                        <div className="search-check-input-border">
-                        {level}
-                        </div>
+                        <div className="search-check-input-border">{level}</div>
                       </label>
                     </div>
                   ))}
@@ -268,13 +263,10 @@ class Search extends Component {
                         className="custom-control-input"
                         id={dept}
                       />
-                      
+
                       <label className="custom-control-label" htmlFor={dept}>
-                      <div className="search-check-input-border">
-                        {dept}
-                        </div>
+                        <div className="search-check-input-border">{dept}</div>
                       </label>
-                      
                     </div>
                   ))}
                 </form>
@@ -304,25 +296,32 @@ class Search extends Component {
                     className="mtx-sr__container"
                     onClick={this.onClickUser}
                   >
-                    <div className="mtx-sr__top"> 
-                      <div className="mtx-sr__left"> 
+                    <div className="mtx-sr__top">
+                      <div className="mtx-sr__left">
                         <img
                           className="mtx-sr__picture"
                           src="./pic.png"
                           alt="user"
                         />
-                      </div> 
-                      <div className="mtx-sr__right">  
-                        <div className="mtx-sr__"> 
-                          <div className="mtx-section__title">{i.name}</div> 
+                      </div>
+                      <div className="mtx-sr__right">
+                        <div className="mtx-sr__">
+                          <div className="mtx-section__title">{i.name}</div>
                           <div className="mtx-sr__">{i.level}</div>
                           <div className="mtx-sr__email">
-                            <div>{i.email}</div> 
-                          </div> 
-                        </div> 
-                      </div> <div className="heatmap">  <PeriodicTable userSkills={this.userSkills} tableData={this.tableData} /> </div>
-                    </div> 
-                    <div className="mtx-sr__bottom"> 
+                            <div>{i.email}</div>
+                          </div>
+                        </div>
+                      </div>{' '}
+                      <div className="heatmap">
+                        {' '}
+                        <PeriodicTable
+                          userSkills={this.userSkills}
+                          tableData={this.tableData}
+                        />{' '}
+                      </div>
+                    </div>
+                    <div className="mtx-sr__bottom">
                       {i.skills.slice(0, 9).map((i, index) => (
                         <div key={index} className="mtx-sr__skill">
                           {i.name}
