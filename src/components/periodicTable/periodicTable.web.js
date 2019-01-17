@@ -10,7 +10,6 @@ class PeriodicTable extends Component {
       hightlightGroup: null,
     };
 
-    this.onClickUser = this.onClickUser.bind(this);
     this.current = -1;
   }
 
@@ -21,11 +20,6 @@ class PeriodicTable extends Component {
 
   unhighlight() {
     this.setState({ isDull: false });
-  }
-
-  onClickUser() {
-    const { history } = this.props;
-    history.push('/profile');
   }
 
   handleWheel(event) {
