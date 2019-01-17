@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Rating from 'react-rating';
 import UserData from '../data/users.json';
 import './_profile.scss';
+import PeriodicTable from '../components/periodicTable/periodicTable.web';
+import TableData from '../data/table.json';
+
 
 class Profile extends Component {
   constructor(props) {
@@ -12,6 +15,11 @@ class Profile extends Component {
     };
 
     this.onClickHome = this.onClickHome.bind(this);
+
+    
+
+    this.tableData = TableData;
+    this.userSkills = [];
   }
 
   componentWillMount() {
@@ -26,6 +34,7 @@ class Profile extends Component {
   render() {
     var user = this.state.userData[0];
 
+    
     return (
       <div>
         <div className="mtx-logo" onClick={this.onClickHome}>
@@ -79,12 +88,12 @@ class Profile extends Component {
                     {i.name}
                   </div>
                 ))}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="mtx-half--bottom">
-          <div className="mtx-section">
+              </div> 
+            </div> 
+          </div>  
+        </div> 
+        <div className="mtx-half--bottom"> 
+          <div className="mtx-section"> <div className="heatmap">  <PeriodicTable userSkills={this.userSkills} tableData={this.tableData} /> </div>
             skills<div>.</div>
           </div>
           <div className="mtx-block mtx-block--bottom">
@@ -102,7 +111,7 @@ class Profile extends Component {
                 </div>
               </div>
             ))}
-          </div>
+          </div> 
         </div>
       </div>
     );

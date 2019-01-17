@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './_periodicTable.scss';
 
+
 class PeriodicTable extends Component {
   constructor(props) {
     super(props);
@@ -10,50 +11,23 @@ class PeriodicTable extends Component {
       hightlightGroup: null,
     };
 
-    this.onClickUser = this.onClickUser.bind(this);
     this.current = -1;
   }
 
   highlightSection(key) {
     this.setState({ isDull: true });
+    if (this.props.groups) {
     this.setState({ hightlightGroup: this.props.groups[key].name });
+    }
   }
 
   unhighlight() {
     this.setState({ isDull: false });
   }
 
-  onClickUser() {
-    const { history } = this.props;
-    history.push('/profile');
-  }
-
-  handleWheel(event) {
-    if (
-      event.nativeEvent.wheelDelta >= 0 ||
-      event.which === 37 ||
-      event.which === 38
-    ) {
-      if (this.current > -1) this.current--;
-      if (this.current > -1) this.highlightSection(this.current);
-      else this.unhighlight();
-    } else if (
-      event.nativeEvent.wheelDelta < 0 ||
-      event.which === 32 ||
-      event.which === 39 ||
-      event.which === 40
-    ) {
-      if (this.current < 6) this.current++;
-      if (this.current < 7) this.highlightSection(this.current);
-    }
-  }
-
   render() {
     return (
-      <div
-        onWheel={evt => this.handleWheel(evt)}
-        onKeyDown={evt => this.handleWheel(evt)}
-      >
+      <div>
         <div className="periodic">
           <div className="periodic-row">
             {this.renderCellContent(this.props.tableData[0])}

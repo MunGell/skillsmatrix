@@ -3,6 +3,10 @@ import Rating from 'react-rating';
 import UserData from '../data/users.json';
 import '../profile/_profile.scss';
 import './_search.scss';
+import PeriodicTable from '../components/periodicTable/periodicTable.web';
+import TableData from '../data/table.json';
+
+
 
 class Search extends Component {
   constructor(props) {
@@ -20,11 +24,15 @@ class Search extends Component {
     this.onFilterSelect = this.onFilterSelect.bind(this);
   }
 
+
   componentWillMount() {
     this.setState({
       userData: UserData,
       filteredUsers: UserData,
     });
+
+    this.tableData = TableData;
+    this.userSkills = [];
   }
 
   onClickHome() {
@@ -284,25 +292,25 @@ class Search extends Component {
                     className="mtx-sr__container"
                     onClick={this.onClickUser}
                   >
-                    <div className="mtx-sr__top">
-                      <div className="mtx-sr__left">
+                    <div className="mtx-sr__top"> 
+                      <div className="mtx-sr__left"> 
                         <img
                           className="mtx-sr__picture"
                           src="./pic.png"
                           alt="user"
                         />
-                      </div>
-                      <div className="mtx-sr__right">
-                        <div className="mtx-sr__">
-                          <div className="mtx-section__title">{i.name}</div>
+                      </div> 
+                      <div className="mtx-sr__right">  
+                        <div className="mtx-sr__"> 
+                          <div className="mtx-section__title">{i.name}</div> 
                           <div className="mtx-sr__">{i.level}</div>
                           <div className="mtx-sr__email">
-                            <div>{i.email}</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="mtx-sr__bottom">
+                            <div>{i.email}</div> 
+                          </div> 
+                        </div> 
+                      </div> <div className="heatmap">  <PeriodicTable userSkills={this.userSkills} tableData={this.tableData} /> </div>
+                    </div> 
+                    <div className="mtx-sr__bottom"> 
                       {i.skills.slice(0, 9).map((i, index) => (
                         <div key={index} className="mtx-sr__skill">
                           {i.name}

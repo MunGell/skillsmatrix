@@ -1,3 +1,11 @@
+.heatmap{
+  transform: scale(0.15);
+  height: 0px;
+  width: 78%;
+  position: absolute;
+
+}
+
 .periodic-row {
   display: flex;
   justify-content: center;
