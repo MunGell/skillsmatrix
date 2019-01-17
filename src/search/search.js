@@ -234,7 +234,9 @@ class Search extends Component {
                         id={level}
                       />
                       <label className="custom-control-label" htmlFor={level}>
+                        <div className="search-check-input-border">
                         {level}
+                        </div>
                       </label>
                     </div>
                   ))}
@@ -258,9 +260,13 @@ class Search extends Component {
                         className="custom-control-input"
                         id={dept}
                       />
+                      
                       <label className="custom-control-label" htmlFor={dept}>
+                      <div className="search-check-input-border">
                         {dept}
+                        </div>
                       </label>
+                      
                     </div>
                   ))}
                 </form>
