@@ -60,6 +60,12 @@ class Search extends Component {
   onFilterSelect(selectedList, event) {
     const list = selectedList;
 
+    if (event.target.checked) {
+      event.target.labels[0].className = 'custom-control-label checked-bold';
+    } else {
+      event.target.labels[0].className = 'custom-control-label';
+    }
+
     if (event.target.checked && !list.includes(event.target.value)) {
       list.push(event.target.value);
     } else if (!event.target.checked && list.includes(event.target.value)) {
@@ -236,7 +242,9 @@ class Search extends Component {
                         id={level}
                       />
                       <label className="custom-control-label" htmlFor={level}>
+                        <div className="search-check-input-border">
                         {level}
+                        </div>
                       </label>
                     </div>
                   ))}
@@ -260,9 +268,13 @@ class Search extends Component {
                         className="custom-control-input"
                         id={dept}
                       />
+                      
                       <label className="custom-control-label" htmlFor={dept}>
+                      <div className="search-check-input-border">
                         {dept}
+                        </div>
                       </label>
+                      
                     </div>
                   ))}
                 </form>

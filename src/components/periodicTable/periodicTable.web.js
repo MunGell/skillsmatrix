@@ -24,6 +24,29 @@ class PeriodicTable extends Component {
     this.setState({ isDull: false });
   }
 
+<<<<<<< HEAD
+=======
+  handleWheel(event) {
+    if (
+      event.nativeEvent.wheelDelta >= 0 ||
+      event.which === 37 ||
+      event.which === 38
+    ) {
+      if (this.current > -1) this.current--;
+      if (this.current > -1) this.highlightSection(this.current);
+      else this.unhighlight();
+    } else if (
+      event.nativeEvent.wheelDelta < 0 ||
+      event.which === 32 ||
+      event.which === 39 ||
+      event.which === 40
+    ) {
+      if (this.current < 6) this.current++;
+      if (this.current < 7) this.highlightSection(this.current);
+    }
+  }
+
+>>>>>>> master
   render() {
     return (
       <div>

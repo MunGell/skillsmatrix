@@ -5,6 +5,12 @@ import { findIndex } from 'lodash';
 import PeriodicTable from '../components/periodicTable/periodicTable.web';
 
 class Table extends Component {
+  constructor(props) {
+    super(props);
+
+    this.onClickUser = this.onClickUser.bind(this);
+  }
+
   componentWillMount() {
     const groups = [];
 
@@ -23,6 +29,11 @@ class Table extends Component {
 
     this.tableData = TableData;
     this.groups = groups;
+  }
+
+  onClickUser() {
+    const { history } = this.props;
+    history.push('/profile');
   }
 
   render() {
