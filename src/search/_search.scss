@@ -97,6 +97,10 @@
     cursor: pointer;
 }
 
+.custom-control-label {
+    user-select: none;
+}
+
 .custom-checkbox .custom-control-label::before {
     border-radius: .15rem;
 }
