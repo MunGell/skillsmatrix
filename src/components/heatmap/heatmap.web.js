@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import './_periodicTable.scss';
+import './_heatmap.scss';
+
+
 
 class PeriodicTable extends Component {
   constructor(props) {
