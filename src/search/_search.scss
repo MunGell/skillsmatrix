@@ -96,6 +96,7 @@
 .custom-control-label {
     user-select: none;
     cursor: pointer;
+    margin-left: 1.25rem !important;
 }
 
 .custom-checkbox .custom-control-label::before {
@@ -120,7 +121,7 @@
     content: "";
     background-color:none;
     border: 1px solid #808080;
-    border-radius: .25rem;
+    border-radius: .2rem;
     z-index: -1;
     cursor: pointer;
 }

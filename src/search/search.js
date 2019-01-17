@@ -225,7 +225,7 @@ class Search extends Component {
                   {this.returnLevels().map((level, index) => (
                     <div
                       key={index}
-                      className="search-check custom-control custom-checkbox my-1 mr-sm-2"
+                      className="search-check custom-control custom-checkbox my-2 mr-sm-2"
                     >
                       <input
                         type="checkbox"
@@ -252,7 +252,7 @@ class Search extends Component {
                   {this.returnDept().map((dept, index) => (
                     <div
                       key={index}
-                      className="search-check custom-control custom-checkbox my-1 mr-sm-2"
+                      className="search-check custom-control custom-checkbox my-2 mr-sm-2"
                     >
                       <input
                         type="checkbox"
