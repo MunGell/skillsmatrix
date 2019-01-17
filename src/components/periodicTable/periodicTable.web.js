@@ -24,8 +24,6 @@ class PeriodicTable extends Component {
     this.setState({ isDull: false });
   }
 
-<<<<<<< HEAD
-=======
   handleWheel(event) {
     if (
       event.nativeEvent.wheelDelta >= 0 ||
@@ -46,10 +44,9 @@ class PeriodicTable extends Component {
     }
   }
 
->>>>>>> master
   render() {
     return (
-      <div>
+      <div onWheel={evt => handleWheel(evt)}>
         <div className="periodic">
           <div className="periodic-row">
             {this.renderCellContent(this.props.tableData[0])}
