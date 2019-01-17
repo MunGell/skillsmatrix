@@ -46,7 +46,7 @@ class PeriodicTable extends Component {
 
   render() {
     return (
-      <div onWheel={evt => handleWheel(evt)}>
+      <div onWheel={evt => this.handleWheel(evt)}>
         <div className="periodic">
           <div className="periodic-row">
             {this.renderCellContent(this.props.tableData[0])}
