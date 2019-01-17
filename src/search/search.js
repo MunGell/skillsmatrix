@@ -52,11 +52,11 @@ class Search extends Component {
   onFilterSelect(selectedList, event) {
     const list = selectedList;
 
-     if(event.target.checked) {
-       event.target.labels[0].className =  "custom-control-label checked-bold";
-     } else {
-       event.target.labels[0].className =  "custom-control-label";
-     }
+    if (event.target.checked) {
+      event.target.labels[0].className = 'custom-control-label checked-bold';
+    } else {
+      event.target.labels[0].className = 'custom-control-label';
+    }
 
     if (event.target.checked && !list.includes(event.target.value)) {
       list.push(event.target.value);
