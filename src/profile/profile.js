@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Rating from 'react-rating';
 import UserData from '../data/users.json';
 import './_profile.scss';
-import HeatMap from '../components/heatmap/heatmap.web';
+import PeriodicTable from '../components/periodicTable/periodicTable.web';
 import TableData from '../data/table.json';
 
 
@@ -24,6 +24,10 @@ class Profile extends Component {
 
   componentWillMount() {
     this.setState({ userData: UserData });
+
+    let user = UserData[0];
+    console.log(user.skills);
+
   }
 
   onClickHome() {
@@ -93,7 +97,7 @@ class Profile extends Component {
           </div>  
         </div> 
         <div className="mtx-half--bottom"> 
-          <div className="mtx-section"> <div className="heatmap">  <HeatMap userSkills={this.userSkills} tableData={this.tableData} /> </div>
+          <div className="mtx-section"> <div className="heatmap">  <PeriodicTable userSkills={this.userSkills} tableData={this.tableData} /> </div>
             skills<div>.</div>
           </div>
           <div className="mtx-block mtx-block--bottom">
