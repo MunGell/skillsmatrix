@@ -1,0 +1,32 @@
+.boxed-view {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+  }
+  
+  .boxed-view__box {
+    background: fade-out(white, .15);
+    box-shadow: 5px 5px 3px -2px gray;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 400px;
+  }
+  
+  .boxed-view__form {
+    display: flex;
+    flex-direction: column;
+    input {
+        margin-bottom: 20px;
+
+        &:last-of-type {
+            margin-bottom: 30px;
+        }
+    }
+
+    button {
+        margin: 20px 0;
+    }
+  }
