@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, browserHistory, Switch } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory'
 import Table from './table/table.js';
 import Profile from './profile/profile.js';
 import Search from './search/search.js';
+import LandingPage from './components/LandingPage';
+import './styles/styles.scss';
+
+const history = createHistory()
 
 class App extends Component {
 	render() {
 		return (
-            <Router>
-                <div className="contain">
+            <Router history={history}>
+                <div>
                     <Switch>
-                        <Route exact={true} path="/(|table)" render={(props) => (
+                        <Route exact path="/" component={LandingPage} />
+                        <Route exact={true} path="/table" render={(props) => (
                             <Table {...props} />
                         )}/>
                         
