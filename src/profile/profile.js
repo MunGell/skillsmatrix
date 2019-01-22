@@ -16,6 +16,7 @@ class Profile extends Component {
     this.onClickHome = this.onClickHome.bind(this);
   }
 
+  
   componentWillMount() {
     this.setState({ userData: UserData });
   }
@@ -25,10 +26,20 @@ class Profile extends Component {
     history.push('/');
   }
 
+  // selectGrouping(){
+  //   var testArray = [];
+  //   skills.forEach(i => {
+  //     if (i.group === 'fel') {
+  //       testArray.push(i);        
+  //     }
+  //   });
+
+  //   return testArray;
+  // }
+
   render() {
     var user = this.state.userData[0];
-    var test = null;
-    var test1 = null;
+    var test1 = [];
     return (
       <div>
         <div className="mtx-logo" onClick={this.onClickHome}>
@@ -92,26 +103,19 @@ class Profile extends Component {
           </div>
           <div className="mtx-block mtx-block--bottom">
           
-          {           
-              test =  _(user.skills)
-              .property('group.fel')
-              .map(i => (
-                <div className="mtx-skill" key={i.name}>
-                  {<div className="mtx-section__content">{i.groupDisplayName}</div>}
-                  <div className="mtx-skill__rating">
-                    <div className="mtx-section__header">{i.displayName}</div>
-                    <Rating
-                      initialRating={i.number}
-                      readonly={true}
-                      emptySymbol={'mtx-rating--empty'}
-                      fullSymbol={'mtx-rating--full'}
-                    />
-                  </div>
-                </div>
-              ))
-              .value()          
-            }
-            
+          
+          {user.skills.forEach(element => {
+            if(element.group === 'fel')
+                test1.push(element)
+          })}
+          {console.log(test1)
+          }
+          <ul>
+          {test1.map(i =>(
+            <li>{i.name}</li> 
+          ))}                 
+          </ul>
+          
             
           </div>
         </div>
