@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Rating from 'react-rating';
-import _ from "lodash";
 import UserData from '../data/users.json';
 import './_profile.scss';
 import { array } from 'prop-types';
@@ -26,20 +25,12 @@ class Profile extends Component {
     history.push('/');
   }
 
-  // selectGrouping(){
-  //   var testArray = [];
-  //   skills.forEach(i => {
-  //     if (i.group === 'fel') {
-  //       testArray.push(i);        
-  //     }
-  //   });
-
-  //   return testArray;
-  // }
-
   render() {
     var user = this.state.userData[0];
-    var test1 = [];
+    // var felArray, clArray, dmArray, fbtArray, taArray, ssArray, pcArray = [];
+    var felArray = [];
+    var clArray = [];
+    var dmArray = [];
     return (
       <div>
         <div className="mtx-logo" onClick={this.onClickHome}>
@@ -102,20 +93,83 @@ class Profile extends Component {
             skills<div>.</div>
           </div>
           <div className="mtx-block mtx-block--bottom">
-          
-          
+                 
           {user.skills.forEach(element => {
             if(element.group === 'fel')
-                test1.push(element)
+                felArray.push(element)
+            else if(element.group === 'cl')
+                clArray.push(element)
+            else if(element.group === 'dm')
+            dmArray.push(element)
           })}
-          {console.log(test1)
-          }
-          <ul>
-          {test1.map(i =>(
-            <li>{i.name}</li> 
-          ))}                 
-          </ul>
-          
+
+          <div className="mtx-column">
+          <div className="mtx-section__content">{felArray[0].groupDisplayName}</div>
+            {felArray.map(i =>(
+              <div className="mtx-skill" key={i.order}>
+              <div className="mtx-skill__rating">
+                <div className="mtx-section__header">{i.displayName}</div>
+                <Rating
+                  initialRating={i.number}
+                  readonly={true}
+                  emptySymbol={'mtx-rating--empty'}
+                  fullSymbol={'mtx-rating--full'}
+                />
+              </div>
+            </div>
+            ))}   
+          </div>
+
+          <div className="mtx-column">
+          <div className="mtx-section__content">{clArray[0].groupDisplayName}</div>
+            {clArray.map(i =>(
+              <div className="mtx-skill" key={i.order}>
+              <div className="mtx-skill__rating">
+                <div className="mtx-section__header">{i.displayName}</div>
+                <Rating
+                  initialRating={i.number}
+                  readonly={true}
+                  emptySymbol={'mtx-rating--empty'}
+                  fullSymbol={'mtx-rating--full'}
+                />
+              </div>
+            </div>
+            ))}  
+          </div>
+
+          <div className="mtx-column">
+          <div className="mtx-section__content">{dmArray[0].groupDisplayName}</div>
+            {dmArray.map(i =>(
+              <div className="mtx-skill" key={i.order}>
+              <div className="mtx-skill__rating">
+                <div className="mtx-section__header">{i.displayName}</div>
+                <Rating
+                  initialRating={i.number}
+                  readonly={true}
+                  emptySymbol={'mtx-rating--empty'}
+                  fullSymbol={'mtx-rating--full'}
+                />
+              </div>
+            </div>
+            ))}  
+          </div>
+
+          <div className="mtx-column">
+          <div className="mtx-section__content">{felArray[0].groupDisplayName}</div>
+            {felArray.map(i =>(
+              <div className="mtx-skill" key={i.order}>
+              <div className="mtx-skill__rating">
+                <div className="mtx-section__header">{i.displayName}</div>
+                <Rating
+                  initialRating={i.number}
+                  readonly={true}
+                  emptySymbol={'mtx-rating--empty'}
+                  fullSymbol={'mtx-rating--full'}
+                />
+              </div>
+            </div>
+            ))}   
+          </div>
             
           </div>
         </div>
