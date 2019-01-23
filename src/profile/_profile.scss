@@ -5,6 +5,13 @@ body {
   width: 100vw;
 }
 
+.noselect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .mtx-logo {
   cursor: pointer;
   font-size: 15px;
@@ -98,6 +105,15 @@ body {
   font-size: 21px;
   font-weight: 300;
   margin: 5px 0;
+}
+
+.mtx-section-info__input {
+  border: none;
+  border-bottom: 2px solid #87bd25;
+
+  &:focus {
+    outline: 0;
+  }
 }
 
 .mtx-skill {
