@@ -21,7 +21,38 @@ class Profile extends Component {
   componentWillMount() {
     this.setState({ userData: UserData });
     this.setState({ skillsData : SkillsData});
+    const usersArray = [];
+    const userSkillsArray = [];
+    const skillsArray = [];
+    const displayNamesArray = [];
+    const user = UserData[0];
+
+    SkillsData.forEach(element => {
+      skillsArray.push(element.groups)
+    });
+
+    user.skills.forEach(element => {
+      userSkillsArray.push(element.groupDisplayName)
+    });
+
+    for (let i = 0; i < skillsArray[0].length; i++) {
+      if(userSkillsArray.includes(skillsArray[0][i].displayName)){
+        displayNamesArray.push( 
+          <div className="mtx-column">
+            <div className="mtx-section__content">{skillsArray[0][i].displayName}</div>
+          </div>        
+          )
+      }
+      
+    }
+
+
+    this.userSkillsArray = userSkillsArray;
+    this.usersArray = usersArray;
+    this.skillsArray = skillsArray;
+    this.displayNamesArray = displayNamesArray;
   }
+
 
   onClickHome() {
     const { history } = this.props;
@@ -31,6 +62,7 @@ class Profile extends Component {
   render() {
     var user = this.state.userData[0];
     var skillsGroup = this.state.skillsData[0];
+
     var felArray = [];
     var clArray = [];
     var dmArray = [];
@@ -38,9 +70,8 @@ class Profile extends Component {
     var taArray = [];
     var ssArray = [];
     var pcArray = [];
-    var skiilGroupName;
+    // var skillsArray = [];
     var y = 0;
-    var skillsArray = [];
     return (
       <div>
         <div className="mtx-logo" onClick={this.onClickHome}>
@@ -132,13 +163,17 @@ class Profile extends Component {
             }
           })}
 
-          {skillsGroup.groups.forEach(element => {
-            skillsArray.push(element.groupName)
-          })}
-          {/* {skiilGroupName = eval(skillsArray[0] + "Array")} */}
-          {console.log(felArray[0].groupDisplayName)}
+          {/* {skillsGroup.groups.forEach(element => {
+            skillsArray.push(element)
+          })} */}
+          {console.log(this.userSkillsArray)}
 
-          {skillsArray.map(x => (
+          {console.log(this.skillsArray[0][1])}
+          {/* {console.log(this.displayNamesArray[0][0].displayName)} */}
+         
+          {this.displayNamesArray}
+
+          {/* {skillsArray.map(x => (
              <div className="mtx-column">
              {console.log(x.displayName)}
              <div className="mtx-section__content">{x.displayName}</div>
@@ -157,7 +192,7 @@ class Profile extends Component {
                </div>
                ))}                   
              </div>
-          ))}
+          ))} */}
 
 
           {/* <div className="mtx-column">
