@@ -135,7 +135,12 @@ class Profile extends Component {
           </div>
           <div className="mtx-block mtx-block--bottom">
                  
-          {user.skills.forEach(element => {
+          {console.log(this.userSkillsArray)}
+
+          {console.log(this.skillsArray[0][1])}
+
+          {this.displayNamesArray}
+          {/* {user.skills.forEach(element => {
             switch (element.group) {
               case "fel":
                 felArray.push(element)
@@ -161,17 +166,9 @@ class Profile extends Component {
               default:
                 break;
             }
-          })}
-
-          {/* {skillsGroup.groups.forEach(element => {
-            skillsArray.push(element)
           })} */}
-          {console.log(this.userSkillsArray)}
 
-          {console.log(this.skillsArray[0][1])}
-          {/* {console.log(this.displayNamesArray[0][0].displayName)} */}
-         
-          {this.displayNamesArray}
+
 
           {/* {skillsArray.map(x => (
              <div className="mtx-column">
