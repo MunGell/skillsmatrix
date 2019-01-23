@@ -8,7 +8,14 @@ class Profile extends Component {
     super(props);
 
     this.state = {
-      userData: []
+      name: 'name',
+      email: 'email',
+      level: 'level',
+      dept: 'department',
+      currentAss: 'current assignment',
+      endDate: 'end date',
+      assHistory: [{order: 0, name: 'previous project'}, {order: 1, name: 'previous project'}, {order: 2, name: 'previous project'}, {order: 3, name: 'previous project'}],
+      skills: []
     };
 
     this.onClickHome = this.onClickHome.bind(this);
@@ -17,7 +24,11 @@ class Profile extends Component {
   }
 
   componentWillMount() {
-    this.setState({ userData: UserData });
+    this.setState({ name: UserData[0].name, email: UserData[0].email, level: UserData[0].level, dept: UserData[0].dept, currentAss: UserData[0].currentAss, endDate: UserData[0].endDate, assHistory: UserData[0].assHistory, skills: UserData[0].skills });
+  }
+
+  handleChange(name, e) {
+    this.setState({[name]: e.target.value});
   }
 
   onClickHome() {
@@ -36,7 +47,7 @@ class Profile extends Component {
   }
 
   render() {
-    var user = this.state.userData[0];
+    var user = this.state;
     var edit = this.props.edit;
 
     return (
@@ -60,19 +71,19 @@ class Profile extends Component {
             <div className="mtx-column mtx-column--center">
               <div className="mtx-section-info">
                 <div className="mtx-section-info__header noselect">name</div>
-                {edit ? <input className="mtx-section-info__input" placeholder={user.name}></input> : <div className="mtx-section-info__content noselect">{user.name}</div>}
+                {edit ? <input className="mtx-section-info__input" value={user.name} onChange={(e) => this.handleChange("name", e)}></input> : <div className="mtx-section-info__content noselect">{user.name}</div>}
               </div>
               <div className="mtx-section-info">
                 <div className="mtx-section-info__header noselect">email</div>
-                  {edit ? <input className="mtx-section-info__input" placeholder={user.email}></input> : <div className="mtx-section-info__content noselect">{user.email}</div>}
+                  {edit ? <input className="mtx-section-info__input" value={user.email} onChange={(e) => this.handleChange("email", e)}></input> : <div className="mtx-section-info__content noselect">{user.email}</div>}
               </div>
               <div className="mtx-section-info">
                 <div className="mtx-section-info__header noselect">level</div>
-                  {edit ? <input className="mtx-section-info__input" placeholder={user.level}></input> : <div className="mtx-section-info__content noselect">{user.level}</div>}
+                  {edit ? <input className="mtx-section-info__input" value={user.level} onChange={(e) => this.handleChange("level", e)}></input> : <div className="mtx-section-info__content noselect">{user.level}</div>}
               </div>
               <div className="mtx-section-info">
                 <div className="mtx-section-info__header noselect">department</div>
-                  {edit ? <input className="mtx-section-info__input" placeholder={user.dept}></input> : <div className="mtx-section-info__content noselect">{user.dept}</div>}
+                  {edit ? <input className="mtx-section-info__input" value={user.dept} onChange={(e) => this.handleChange("dept", e)}></input> : <div className="mtx-section-info__content noselect">{user.dept}</div>}
               </div>
             </div>
             <div className="mtx-column">
@@ -80,21 +91,22 @@ class Profile extends Component {
                 <div className="mtx-section-info__header noselect">
                   current assignment
                 </div>
-                {edit ? <input className="mtx-section-info__input" placeholder={user.currentAss}></input> : <div className="mtx-section-info__content noselect">
+                {edit ? <input className="mtx-section-info__input" value={user.currentAss} onChange={(e) => this.handleChange("currentAss", e)}></input> : <div className="mtx-section-info__content noselect">
                   {user.currentAss}
                   </div>}
               </div>
               <div className="mtx-section-info">
                 <div className="mtx-section-info__header noselect">end date</div>
-                  {edit ? <input className="mtx-section-info__input" placeholder={user.endDate}></input> : <div className="mtx-section-info__content noselect">{user.endDate}</div>}
+                  {edit ? <input className="mtx-section-info__input" value={user.endDate} onChange={(e) => this.handleChange("endDate", e)}></input> : <div className="mtx-section-info__content noselect">{user.endDate}</div>}
               </div>
               <div className="mtx-section-info">
                 <div className="mtx-section-info__header noselect">
                   assignment history
                 </div>
-                {edit ? user.assHistory.map(i => (
-                  <input className="mtx-section-info__input" key={i.order} placeholder={i.name}></input>
-                )) : user.assHistory.map(i => (
+                {//edit ? user.assHistory.map(i => (
+                  // <input className="mtx-section-info__input" key={i.order} value={i.name} onChange={(e) => this.handleChange("assHistory["+i.order+"].name", e)}></input>
+                // )) : 
+                user.assHistory.map(i => (
                   <div className="mtx-section-info__content" key={i.order}>
                     {i.name}
                   </div>
