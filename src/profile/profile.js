@@ -4,6 +4,7 @@ import UserData from '../data/users.json';
 import SkillsData from '../data/skillGroups.json';
 import './_profile.scss';
 import { array } from 'prop-types';
+import SkillGroupList from './SkillGroupList'
 
 class Profile extends Component {
   constructor(props) {
@@ -20,40 +21,6 @@ class Profile extends Component {
   
   componentWillMount() {
     this.setState({ userData: UserData });
-    this.setState({ skillsData : SkillsData});
-    const usersArray = [];
-    const skillRating = [];
-    const userSkills = [];
-    const displayNames = [];
-    const user = UserData[0];
-
-    // SkillsData.forEach(element => {
-    //   skillsArray.push(element.groups)
-    // });
-
-   
-
-    user.skills.forEach(element => {
-      userSkills.push(element.groupDisplayName)
-    });
-
-    
-
-    let uniqueUserSkills = [...new Set(userSkills)];
-
-
-    uniqueUserSkills.forEach(element => {
-      displayNames.push( 
-        <div className="mtx-column">
-          <div className="mtx-section__content">{element}</div>
-        </div>
-        )
-    });
-
-    this.skillRating = skillRating;
-    this.uniqueUserSkills = uniqueUserSkills;
-    this.userSkills = userSkills;
-    this.displayNames = displayNames;
   }
 
 
@@ -63,17 +30,7 @@ class Profile extends Component {
   }
 
   render() {
-    var user = this.state.userData[0];
-    // var skillsGroup = this.state.skillsData[0];
-
-    // var felArray = [];
-    // var clArray = [];
-    // var dmArray = [];
-    // var fbtArray = [];
-    // var taArray = [];
-    // var ssArray = [];
-    // var pcArray = [];
-    // // var skillsArray = [];
+    const user = UserData[0];
     return (
       <div>
         <div className="mtx-logo" onClick={this.onClickHome}>
@@ -135,220 +92,9 @@ class Profile extends Component {
           <div className="mtx-section">
             skills<div>.</div>
           </div>
-          <div className="mtx-block mtx-block--bottom">
-                 
-          {console.log(this.userSkills)}
-
-          {console.log(this.uniqueUserSkills)}
-          
-          {this.displayNames}
-
-          {this.uniqueUserSkills.map(i => (
-            <div>{this.displayNames[i]}</div>
-            
-            // {this.userSkills.map(i =>(
-            //   <div className="mtx-skill" key={i.order}>
-            //   {/* <div className="mtx-skill__rating">
-            //     <div className="mtx-section__header">{i.displayName}</div>
-            //     <Rating
-            //       initialRating={i.number}
-            //       readonly={true}
-            //       emptySymbol={'mtx-rating--empty'}
-            //       fullSymbol={'mtx-rating--full'}
-            //     />
-            //   </div> */}
-            // </div>
-            // ))}
-          ))}            
-              
-              {user.skills.map(i =>(
-              <div className="mtx-skill" key={i.order}>
-              <div className="mtx-skill__rating">
-                <div className="mtx-section__header">{i.displayName}</div>
-                <Rating
-                  initialRating={i.number}
-                  readonly={true}
-                  emptySymbol={'mtx-rating--empty'}
-                  fullSymbol={'mtx-rating--full'}
-                />
-              </div>
-            </div>
-            ))}
-          
-          {/* {user.skills.forEach(element => {
-            switch (element.group) {
-              case "fel":
-                felArray.push(element)
-                break;
-              case "cl":
-                clArray.push(element)
-              break;
-              case "dm":
-                dmArray.push(element)
-              break;
-              case "fbt":
-                fbtArray.push(element)
-              break;
-              case "ta":
-                taArray.push(element)
-              break;
-              case "ss":
-                ssArray.push(element)
-              break;
-              case "pc":
-                pcArray.push(element)
-              break;
-              default:
-                break;
-            }
-          })} */}
-
-
-
-          {/* {skillsArray.map(x => (
-             <div className="mtx-column">
-             {console.log(x.displayName)}
-             <div className="mtx-section__content">{x.displayName}</div>
-               
-               {eval(skillsArray[0] + "Array").map(i =>(
-                 <div className="mtx-skill" key={i.order}>
-                 <div className="mtx-skill__rating">
-                   <div className="mtx-section__header">{i.displayName}</div>
-                   <Rating
-                     initialRating={i.number}
-                     readonly={true}
-                     emptySymbol={'mtx-rating--empty'}
-                     fullSymbol={'mtx-rating--full'}
-                   />
-                 </div>
-               </div>
-               ))}                   
-             </div>
-          ))} */}
-
-
-          {/* <div className="mtx-column">
-          <div className="mtx-section__content">{felArray[0].groupDisplayName}</div>
-            {felArray.map(i =>(
-              <div className="mtx-skill" key={i.order}>
-              <div className="mtx-skill__rating">
-                <div className="mtx-section__header">{i.displayName}</div>
-                <Rating
-                  initialRating={i.number}
-                  readonly={true}
-                  emptySymbol={'mtx-rating--empty'}
-                  fullSymbol={'mtx-rating--full'}
-                />
-              </div>
-            </div>
-            ))}   
-          </div>
-
-          <div className="mtx-column">
-          <div className="mtx-section__content">{clArray[0].groupDisplayName}</div>
-            {clArray.map(i =>(
-              <div className="mtx-skill" key={i.order}>
-              <div className="mtx-skill__rating">
-                <div className="mtx-section__header">{i.displayName}</div>
-                <Rating
-                  initialRating={i.number}
-                  readonly={true}
-                  emptySymbol={'mtx-rating--empty'}
-                  fullSymbol={'mtx-rating--full'}
-                />
-              </div>
-            </div>
-            ))}  
-          </div>
-
-          <div className="mtx-column">
-          <div className="mtx-section__content">{dmArray[0].groupDisplayName}</div>
-            {dmArray.map(i =>(
-              <div className="mtx-skill" key={i.order}>
-              <div className="mtx-skill__rating">
-                <div className="mtx-section__header">{i.displayName}</div>
-                <Rating
-                  initialRating={i.number}
-                  readonly={true}
-                  emptySymbol={'mtx-rating--empty'}
-                  fullSymbol={'mtx-rating--full'}
-                />
-              </div>
-            </div>
-            ))}  
-          </div>
-
-          <div className="mtx-column">
-          <div className="mtx-section__content">{fbtArray.groupDisplayName}</div>
-            {fbtArray.map(i =>(
-              <div className="mtx-skill" key={i.order}>
-              <div className="mtx-skill__rating">
-                <div className="mtx-section__header">{i.displayName}</div>
-                <Rating
-                  initialRating={i.number}
-                  readonly={true}
-                  emptySymbol={'mtx-rating--empty'}
-                  fullSymbol={'mtx-rating--full'}
-                />
-              </div>
-            </div>
-            ))}   
-          </div>
-
-          <div className="mtx-column">
-          <div className="mtx-section__content">{taArray.groupDisplayName}</div>
-            {taArray.map(i =>(
-              <div className="mtx-skill" key={i.order}>
-              <div className="mtx-skill__rating">
-                <div className="mtx-section__header">{i.displayName}</div>
-                <Rating
-                  initialRating={i.number}
-                  readonly={true}
-                  emptySymbol={'mtx-rating--empty'}
-                  fullSymbol={'mtx-rating--full'}
-                />
-              </div>
-            </div>
-            ))}   
-          </div>
-
-          <div className="mtx-column">
-          <div className="mtx-section__content">{ssArray.groupDisplayName}</div>
-            {ssArray.map(i =>(
-              <div className="mtx-skill" key={i.order}>
-              <div className="mtx-skill__rating">
-                <div className="mtx-section__header">{i.displayName}</div>
-                <Rating
-                  initialRating={i.number}
-                  readonly={true}
-                  emptySymbol={'mtx-rating--empty'}
-                  fullSymbol={'mtx-rating--full'}
-                />
-              </div>
-            </div>
-            ))}   
-          </div>
-
-          <div className="mtx-column">
-          <div className="mtx-section__content">{pcArray.groupDisplayName}</div>
-            {pcArray.map(i =>(
-              <div className="mtx-skill" key={i.order}>
-              <div className="mtx-skill__rating">
-                <div className="mtx-section__header">{i.displayName}</div>
-                <Rating
-                  initialRating={i.number}
-                  readonly={true}
-                  emptySymbol={'mtx-rating--empty'}
-                  fullSymbol={'mtx-rating--full'}
-                />
-              </div>
-            </div>
-            ))}   
-          </div> */}
-            
-          </div>
+          <SkillGroupList />
+          </div>    
         </div>
-      </div>
     );
   }
 }
