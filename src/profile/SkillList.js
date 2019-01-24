@@ -3,25 +3,23 @@ import SkillListItem from './SkillListItem';
 import userData from '../data/users.json';
 
 export default class SkillList extends Component {
-    constructor(props) {
-        super(props);
-    }
+  constructor(props) {
+    super(props);
+  }
 
-    render(){
-        let categorySkills = [];
-        this.props.skills.forEach(skill => {
-            if(skill.groupDisplayName === this.props.skillGroup){
-                categorySkills.push(skill);
-            }
-        });
+  render(){
+    const categorySkills = [];
+    this.props.skills.forEach(skill => {
+      if(skill.groupDisplayName === this.props.skillGroup){
+        categorySkills.push(skill);
+      }
+    });
 
-        return(
-            categorySkills.map(skill => {
-                return(
-                <SkillListItem {...skill} /> 
-                )
-            }
-            )
-        )
-    }
+    return(
+        categorySkills.map(skill => {
+          return(<SkillListItem {...skill} />)
+        }
+      )
+    )
+  }
 }

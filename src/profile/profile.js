@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import Rating from 'react-rating';
 import UserData from '../data/users.json';
-import SkillsData from '../data/skillGroups.json';
 import './_profile.scss';
-import { array } from 'prop-types';
 import SkillGroupList from './SkillGroupList'
 
 class Profile extends Component {
@@ -18,11 +15,9 @@ class Profile extends Component {
     this.onClickHome = this.onClickHome.bind(this);
   }
 
-  
   componentWillMount() {
     this.setState({ userData: UserData });
   }
-
 
   onClickHome() {
     const { history } = this.props;
@@ -92,8 +87,8 @@ class Profile extends Component {
             skills<div>.</div>
           </div>
           <SkillGroupList />
-          </div>    
         </div>
+      </div>
     );
   }
 }
