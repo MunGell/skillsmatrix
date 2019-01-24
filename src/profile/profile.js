@@ -22,35 +22,38 @@ class Profile extends Component {
     this.setState({ userData: UserData });
     this.setState({ skillsData : SkillsData});
     const usersArray = [];
-    const userSkillsArray = [];
-    const skillsArray = [];
-    const displayNamesArray = [];
+    const skillRating = [];
+    const userSkills = [];
+    const displayNames = [];
     const user = UserData[0];
 
-    SkillsData.forEach(element => {
-      skillsArray.push(element.groups)
-    });
+    // SkillsData.forEach(element => {
+    //   skillsArray.push(element.groups)
+    // });
+
+   
 
     user.skills.forEach(element => {
-      userSkillsArray.push(element.groupDisplayName)
+      userSkills.push(element.groupDisplayName)
     });
 
-    for (let i = 0; i < skillsArray[0].length; i++) {
-      if(userSkillsArray.includes(skillsArray[0][i].displayName)){
-        displayNamesArray.push( 
-          <div className="mtx-column">
-            <div className="mtx-section__content">{skillsArray[0][i].displayName}</div>
-          </div>        
-          )
-      }
-      
-    }
+    
+
+    let uniqueUserSkills = [...new Set(userSkills)];
 
 
-    this.userSkillsArray = userSkillsArray;
-    this.usersArray = usersArray;
-    this.skillsArray = skillsArray;
-    this.displayNamesArray = displayNamesArray;
+    uniqueUserSkills.forEach(element => {
+      displayNames.push( 
+        <div className="mtx-column">
+          <div className="mtx-section__content">{element}</div>
+        </div>
+        )
+    });
+
+    this.skillRating = skillRating;
+    this.uniqueUserSkills = uniqueUserSkills;
+    this.userSkills = userSkills;
+    this.displayNames = displayNames;
   }
 
 
@@ -61,17 +64,16 @@ class Profile extends Component {
 
   render() {
     var user = this.state.userData[0];
-    var skillsGroup = this.state.skillsData[0];
+    // var skillsGroup = this.state.skillsData[0];
 
-    var felArray = [];
-    var clArray = [];
-    var dmArray = [];
-    var fbtArray = [];
-    var taArray = [];
-    var ssArray = [];
-    var pcArray = [];
-    // var skillsArray = [];
-    var y = 0;
+    // var felArray = [];
+    // var clArray = [];
+    // var dmArray = [];
+    // var fbtArray = [];
+    // var taArray = [];
+    // var ssArray = [];
+    // var pcArray = [];
+    // // var skillsArray = [];
     return (
       <div>
         <div className="mtx-logo" onClick={this.onClickHome}>
@@ -135,11 +137,44 @@ class Profile extends Component {
           </div>
           <div className="mtx-block mtx-block--bottom">
                  
-          {console.log(this.userSkillsArray)}
+          {console.log(this.userSkills)}
 
-          {console.log(this.skillsArray[0][1])}
+          {console.log(this.uniqueUserSkills)}
+          
+          {this.displayNames}
 
-          {this.displayNamesArray}
+          {this.uniqueUserSkills.map(i => (
+            <div>{this.displayNames[i]}</div>
+            
+            // {this.userSkills.map(i =>(
+            //   <div className="mtx-skill" key={i.order}>
+            //   {/* <div className="mtx-skill__rating">
+            //     <div className="mtx-section__header">{i.displayName}</div>
+            //     <Rating
+            //       initialRating={i.number}
+            //       readonly={true}
+            //       emptySymbol={'mtx-rating--empty'}
+            //       fullSymbol={'mtx-rating--full'}
+            //     />
+            //   </div> */}
+            // </div>
+            // ))}
+          ))}            
+              
+              {user.skills.map(i =>(
+              <div className="mtx-skill" key={i.order}>
+              <div className="mtx-skill__rating">
+                <div className="mtx-section__header">{i.displayName}</div>
+                <Rating
+                  initialRating={i.number}
+                  readonly={true}
+                  emptySymbol={'mtx-rating--empty'}
+                  fullSymbol={'mtx-rating--full'}
+                />
+              </div>
+            </div>
+            ))}
+          
           {/* {user.skills.forEach(element => {
             switch (element.group) {
               case "fel":
