@@ -28,7 +28,6 @@ class Profile extends Component {
     const { history } = this.props;
     history.push('/');
   }
-
   render() {
     const user = UserData[0];
     return (
