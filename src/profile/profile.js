@@ -101,13 +101,12 @@ class Profile extends Component {
         <div className="mtx-half--bottom">
           <div>
             <div className="mtx-section">
-              skills<div>.</div>
-            </div>
-            <div className="heatmap">
+              skills<div>.</div> <div className="heatmap">
               <PeriodicTable
                 userSkills={this.userSkills}
                 tableData={this.tableData}
               />
+            </div> 
             </div>
           </div>
           <div className="mtx-block mtx-block--bottom">
@@ -122,12 +121,12 @@ class Profile extends Component {
                     emptySymbol={'mtx-rating--empty'}
                     fullSymbol={'mtx-rating--full'}
                   />
-                </div>
-              </div>
+                </div> 
+              </div> 
             ))}
-          </div>
-        </div>
-      </div>
+          </div> 
+        </div> 
+      </div> 
     );
   }
 }

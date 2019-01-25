@@ -1,3 +1,9 @@
+.heatmap {
+  transform: scale(0.15);
+  height: 0px;
+  width: 90%;
+}
+
 .userTable {
   transform: scale(0.15);
   height: 0px;
@@ -78,11 +84,11 @@
   .cell:nth-child(1) .element,
   .cell:nth-child(-n + 2) .element,
   .periodic-row:nth-child(1) .cell:nth-child(5) .element {
-    background-color: rgba(64, 192, 0, 0.6);
+    background-color: #87bd25;
   }
   .cell:nth-child(1):hover .element,
   .cell:nth-child(-n + 2):hover .element {
-    background-color: rgba(64, 192, 0, 0.9);
+    background-color: #87bd25;
   }
   .periodic-row:nth-child(1) .cell:nth-child(n + 17) .element,
   .periodic-row:nth-child(2) .cell:nth-child(n + 13) .element,
@@ -173,7 +179,7 @@
   background-color: rgba(100, 100, 100, 0.3) !important;
 }
 .userSkill {
-  background-color: rgba(64, 192, 0, 0.6) !important;
+  background-color: #87bd25 !important;
 }
 
 .element {
