@@ -74,20 +74,20 @@ class Profile extends Component {
           <img src="./img/edit.png" alt="edit" />
         </div>} 
         <div className="mtx-half"> 
-          <div className="mtx-section noselect">
-            user profile<div>.</div>
-          </div>  <div className="heatmap">
+          <div className="mtx-section noselect"> 
+            user profile<div>.</div> 
+          </div> 
+          <div className="mtx-block mtx-block--top"> 
+            <div className="mtx-column"> 
+              <img className="mtx-picture" src="./img/pic.png" alt="user" />
+            </div> 
+            <div className="mtx-column mtx-column--center"> <div className="heatmap">
               <PeriodicTable
                 userSkills={this.userSkills}
                 tableData={this.tableData}
               />
             </div>
-          <div className="mtx-block mtx-block--top">
-            <div className="mtx-column">
-              <img className="mtx-picture" src="./img/pic.png" alt="user" />
-            </div>
-            <div className="mtx-column mtx-column--center">
-              <div className="mtx-section-info">
+              <div className="mtx-section-info"> 
                 <div className="mtx-section-info__header noselect">name</div>
                 {edit ? <input className="mtx-section-info__input" value={user.name} onChange={(e) => this.handleChange("name", e)}></input> : <div className="mtx-section-info__content noselect">{user.name}</div>}
               </div>
@@ -102,10 +102,10 @@ class Profile extends Component {
               <div className="mtx-section-info">
                 <div className="mtx-section-info__header noselect">department</div>
                   {edit ? <input className="mtx-section-info__input" value={user.dept} onChange={(e) => this.handleChange("dept", e)}></input> : <div className="mtx-section-info__content noselect">{user.dept}</div>}
-              </div>
-            </div>
-            <div className="mtx-column">
-              <div className="mtx-section-info">
+              </div> 
+            </div> 
+            <div className="mtx-column"> 
+              <div className="mtx-section-info"> 
                 <div className="mtx-section-info__header noselect">
                   current assignment
                 </div>
@@ -120,19 +120,19 @@ class Profile extends Component {
               <div className="mtx-section-info">
                 <div className="mtx-section-info__header noselect">
                   assignment history
-                </div>
+                </div> 
                 {//edit ? user.assHistory.map(i => (
                   // <input className="mtx-section-info__input" key={i.order} value={i.name} onChange={(e) => this.handleChange("assHistory["+i.order+"].name", e)}></input>
                 // )) : 
                 user.assHistory.map(i => (
                   <div className="mtx-section-info__content" key={i.order}>
                     {i.name}
-                  </div>
+                  </div> 
                 ))} 
-              </div>
-            </div>
-          </div>
-        </div>
+              </div> 
+            </div> 
+          </div> 
+        </div> 
         <div className="mtx-half--bottom">
           <div>
             <div className="mtx-section">
@@ -155,7 +155,7 @@ class Profile extends Component {
               </div> 
             ))}
           </div> 
-        </div> 
+        </div>  
       </div> 
     );
   }
