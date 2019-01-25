@@ -29,7 +29,13 @@ class App extends Component {
             <Route
               exact={true}
               path="/profile"
-              render={props => <Profile {...props} />}
+              render={props => <Profile {...props} edit={false} />}
+            />
+
+            <Route
+              exact={true}
+              path="/edit"
+              render={props => <Profile {...props} edit={true} />}
             />
 
             <Route
