@@ -1,8 +1,6 @@
 .heatmap {
-  transform: scale(0.15);
+  transform: scale(0.4, 0.2);
   height: 0px;
-  width: 230%;
-  margin-left: 70%; 
 }
 
 .userTable {
@@ -91,6 +89,7 @@
   .cell:nth-child(-n + 2):hover .element {
     background-color: #87bd25;
   }
+
   .periodic-row:nth-child(1) .cell:nth-child(n + 17) .element,
   .periodic-row:nth-child(2) .cell:nth-child(n + 13) .element,
   .periodic-row:nth-child(3) .cell:nth-child(n + 14) .element,

@@ -74,19 +74,19 @@ class Profile extends Component {
           <img src="./img/edit.png" alt="edit" />
         </div>} 
         <div className="mtx-half"> 
-          <div className="mtx-section noselect"> 
-            user profile<div>.</div> 
-          </div> 
+          <div className="d-flex"> 
+            <div className="mtx-section noselect w-50 h-100"> 
+              user profile<div>.</div> 
+            </div> 
+            <div className="heatmap w-50">
+              <PeriodicTable userSkills={this.userSkills} tableData={this.tableData} />
+            </div>
+          </div>
           <div className="mtx-block mtx-block--top"> 
             <div className="mtx-column"> 
               <img className="mtx-picture" src="./img/pic.png" alt="user" />
             </div> 
-            <div className="mtx-column mtx-column--center"> <div className="heatmap">
-              <PeriodicTable
-                userSkills={this.userSkills}
-                tableData={this.tableData}
-              />
-            </div>
+            <div className="mtx-column mtx-column--center"> 
               <div className="mtx-section-info"> 
                 <div className="mtx-section-info__header noselect">name</div>
                 {edit ? <input className="mtx-section-info__input" value={user.name} onChange={(e) => this.handleChange("name", e)}></input> : <div className="mtx-section-info__content noselect">{user.name}</div>}
