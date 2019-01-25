@@ -141,15 +141,11 @@ class Search extends Component {
       let allUsers = [];
 
       // if there are levels and dept selected:
-      if (
-        this.state.selectedDept.length !== 0 &&
-        this.state.selectedLevels.length !== 0
-      ) {
+      if (this.state.selectedDept.length !== 0 && this.state.selectedLevels.length !== 0) {
         const filteredUsers = [];
         const filteredArray = [];
 
         // filters the users by level array by all of the selected dept
-
         for (let i = 0; i < usersByDeptArray.length; i++) {
           filteredUsers.push(
             usersByLevelArray.filter(
@@ -201,69 +197,55 @@ class Search extends Component {
 
   render() {
     this.returnLevels();
+
     return (
       <div>
-        <div className="mtx-logo" onClick={this.onClickHome}>
+        <div className="mtx-logo noselect" onClick={this.onClickHome}>
           nomad<div>.</div>
         </div>
         <div className="mtx-user" onClick={this.onClickUser}>
-          <img src="./user.png" alt="user" />
+          <img src="./img/user.png" alt="user" />
         </div>
         <div className="mtx-half">
           <div className="mtx-">
-            <div className="mtx-section">
+            <div className="mtx-section noselect">
               search results<div>.</div>
             </div>
           </div>
           <div className="mtx-main">
             <div className="mtx-sidebar">
               <div className="mtx-sidebar__top">
-                <div className="mtx-section__title">filter</div>
+                <div className="mtx-section__title noselect">filter</div>
               </div>
               <div className="mtx-sidebar__section">
-                <div className="mtx-section__title">level</div>
-                <form
-                  onChange={e =>
-                    this.onFilterSelect(this.state.selectedLevels, e)
-                  }
-                >
+                <div className="mtx-section__title noselect">level</div>
+                <form onChange={e => this.onFilterSelect(this.state.selectedLevels, e)}>
                   {this.returnLevels().map((level, index) => (
-                    <div
-                      key={index}
-                      className="search-check custom-control custom-checkbox my-1 mr-sm-2"
-                    >
+                    <div key={index} className="search-check custom-control custom-checkbox my-2 mr-sm-2">
                       <input
                         type="checkbox"
                         value={level}
                         className="custom-control-input"
-                        id={level}
-                      />
+                        id={level} />
                       <label className="custom-control-label" htmlFor={level}>
-                        <div className="search-check-input-border">{level}</div>
+                        <div className="search-check-input-border">
+                          {level}
+                        </div>
                       </label>
                     </div>
                   ))}
                 </form>
               </div>
               <div className="mtx-sidebar__section">
-                <div className="mtx-section__title">department</div>
-                <form
-                  onChange={e =>
-                    this.onFilterSelect(this.state.selectedDept, e)
-                  }
-                >
+                <div className="mtx-section__title noselect">department</div>
+                <form onChange={e => this.onFilterSelect(this.state.selectedDept, e)}>
                   {this.returnDept().map((dept, index) => (
-                    <div
-                      key={index}
-                      className="search-check custom-control custom-checkbox my-1 mr-sm-2"
-                    >
+                    <div key={index} className="search-check custom-control custom-checkbox my-2 mr-sm-2">
                       <input
                         type="checkbox"
                         value={dept}
                         className="custom-control-input"
-                        id={dept}
-                      />
-
+                        id={dept} />
                       <label className="custom-control-label" htmlFor={dept}>
                         <div className="search-check-input-border">{dept}</div>
                       </label>
@@ -272,37 +254,34 @@ class Search extends Component {
                 </form>
               </div>
               <div className="mtx-sidebar__section">
-                <div className="mtx-section__title">skill level</div>
+                <div className="mtx-section__title noselect">skill level</div>
                 <div className="mtx-rating__filter">
                   <Rating
                     initialRating={3}
                     readonly={true}
                     emptySymbol={'mtx-rating--empty'}
-                    fullSymbol={'mtx-rating--full'}
-                  />
+                    fullSymbol={'mtx-rating--full'} />
                   3+
                 </div>
               </div>
               <div className="mtx-sidebar__section">
-                <div className="mtx-section__title">skills</div>
+                <div className="mtx-section__title noselect">skills</div>
               </div>
             </div>
             <div className="mtx-results">
-              <div className="mtx-section__title ">sort by</div>
+              <div className="mtx-section__title noselect">sort by</div>
               <div className="mtx-sr__list">
                 {this.state.filteredUsers.map((i, index) => (
                   <div
                     key={index}
                     className="mtx-sr__container"
-                    onClick={this.onClickUser}
-                  >
+                    onClick={this.onClickUser}>
                     <div className="mtx-sr__top">
                       <div className="mtx-sr__left">
                         <img
                           className="mtx-sr__picture"
-                          src="./pic.png"
-                          alt="user"
-                        />
+                          src="./img/pic.png"
+                          alt="user" />
                       </div>
                       <div className="mtx-sr__right">
                         <div className="mtx-sr__">

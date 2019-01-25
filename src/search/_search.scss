@@ -96,6 +96,7 @@
 .custom-control-label {
   user-select: none;
   cursor: pointer;
+  margin-left: 1.25rem !important;
 }
 
 .custom-checkbox .custom-control-label::before {
@@ -112,20 +113,20 @@
 
 .search-check-input-border::before {
   position: absolute;
-  top: 0.1rem;
+  top: .1rem;
   left: -0.09rem;
   display: block;
   width: 1.3rem;
   height: 1.3rem;
-  content: '';
-  background-color: none;
+  content: "";
+  background-color:none;
   border: 1px solid #808080;
-  border-radius: 0.25rem;
+  border-radius: .2rem;
   z-index: -1;
   cursor: pointer;
 }
 
-.custom-control-input:focus ~ .custom-control-label::before {
+.custom-control-input:focus~.custom-control-label::before {
   box-shadow: none;
 }
 

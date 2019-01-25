@@ -40,7 +40,7 @@ class Table extends Component {
     return (
       <div>
         <div className="mtx-user__home" onClick={this.onClickUser}>
-          <img src="./user.png" alt="user" />
+          <img src="./img/user.png" alt="user" />
         </div>
         <PeriodicTable groups={this.groups} tableData={this.tableData} />
       </div>
