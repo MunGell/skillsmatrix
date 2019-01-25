@@ -27,11 +27,10 @@ class Profile extends Component {
   }
 
   componentWillMount() {
-
     this.setState({ name: UserData[0].name, email: UserData[0].email, level: UserData[0].level, dept: UserData[0].dept, currentAss: UserData[0].currentAss, endDate: UserData[0].endDate, assHistory: UserData[0].assHistory, skills: UserData[0].skills });
     // For now we just going to take the first user from the mock data to work with.
 
-    const listSkills = this.state.skills
+    const listSkills =  UserData[0].skills
       .map(skill => skill.name)
       .filter(skill => {
         return !find(listSkills, skill);
@@ -73,11 +72,16 @@ class Profile extends Component {
           <img src="./img/save.png" alt="save" />
         </div> : <div className="mtx-user" onClick={this.onClickEdit}>
           <img src="./img/edit.png" alt="edit" />
-        </div>}
-        <div className="mtx-half">
+        </div>} 
+        <div className="mtx-half"> 
           <div className="mtx-section noselect">
             user profile<div>.</div>
-          </div>
+          </div>  <div className="heatmap">
+              <PeriodicTable
+                userSkills={this.userSkills}
+                tableData={this.tableData}
+              />
+            </div>
           <div className="mtx-block mtx-block--top">
             <div className="mtx-column">
               <img className="mtx-picture" src="./img/pic.png" alt="user" />
@@ -132,12 +136,7 @@ class Profile extends Component {
         <div className="mtx-half--bottom">
           <div>
             <div className="mtx-section">
-              skills<div>.</div> <div className="heatmap">
-              <PeriodicTable
-                userSkills={this.userSkills}
-                tableData={this.tableData}
-              />
-            </div> 
+              skills<div>.</div> 
             </div>
           </div>
           <div className="mtx-block mtx-block--bottom">
