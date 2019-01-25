@@ -33,55 +33,6 @@
         "groupDisplayName": "Front End Languages"
       },
       {
-        "name": "c",
-        "number": 3,
-        "displayName": "C",
-        "group": "cl",
-        "groupDisplayName": "Core Languages"
-      },
-      {
-        "name": "jsx",
-        "number": 3,
-        "displayName": "JSX",
-        "group": "fel",
-        "groupDisplayName": "Front End Languages"
-      },
-      {
-        "name": "html",
-        "number": 4,
-        "displayName": "HTML5",
-        "group": "fel",
-        "groupDisplayName": "Front End Languages"
-      },
-      {
-        "name": "soap",
-        "number": 3,
-        "displayName": "SOAP",
-        "group": "cl",
-        "groupDisplayName": "Core Languages"
-      },
-      {
-        "name": "rest",
-        "number": 3,
-        "displayName": "REST",
-        "group": "cl",
-        "groupDisplayName": "Core Languages"
-      },
-      {
-        "name": "apex",
-        "number": 3,
-        "displayName": "Apex",
-        "group": "cl",
-        "groupDisplayName": "Core Languages"
-      },
-      {
-        "name": "ruby",
-        "number": 1,
-        "displayName": "Ruby",
-        "group": "cl",
-        "groupDisplayName": "Core Languages"
-      },
-      {
         "name": "spring",
         "number": 2,
         "displayName": "Spring",
