@@ -85,49 +85,49 @@
 }
 
 .custom-control-label::before {
-    background-color: white;
-    border: none;
-    top: .27rem;
-    height: 0.95rem;
-    width:0.95rem;
-    left:.09rem;
+  background-color: white;
+  border: none;
+  top: 0.27rem;
+  height: 0.95rem;
+  width: 0.95rem;
+  left: 0.09rem;
 }
 
 .custom-control-label {
-    user-select: none;
-    cursor: pointer;
-    margin-left: 1.25rem !important;
+  user-select: none;
+  cursor: pointer;
+  margin-left: 1.25rem !important;
 }
 
 .custom-checkbox .custom-control-label::before {
-    border-radius: .15rem;
+  border-radius: 0.15rem;
 }
 
-.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #87bd25;
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #87bd25;
 }
 
-.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
-    background-image: none;
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: none;
 }
 
 .search-check-input-border::before {
-    position: absolute;
-    top: .1rem;
-    left: -0.09rem;
-    display: block;
-    width: 1.3rem;
-    height: 1.3rem;
-    content: "";
-    background-color:none;
-    border: 1px solid #808080;
-    border-radius: .2rem;
-    z-index: -1;
-    cursor: pointer;
+  position: absolute;
+  top: .1rem;
+  left: -0.09rem;
+  display: block;
+  width: 1.3rem;
+  height: 1.3rem;
+  content: "";
+  background-color:none;
+  border: 1px solid #808080;
+  border-radius: .2rem;
+  z-index: -1;
+  cursor: pointer;
 }
 
 .custom-control-input:focus~.custom-control-label::before {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 @media (max-width: 680px) {

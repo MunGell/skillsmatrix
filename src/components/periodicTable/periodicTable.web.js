@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './_periodicTable.scss';
+import { includes } from 'lodash';
 
 class PeriodicTable extends Component {
   constructor(props) {
@@ -8,14 +9,21 @@ class PeriodicTable extends Component {
     this.state = {
       isDull: false,
       hightlightGroup: null,
+      isUser: false,
     };
 
     this.current = -1;
   }
 
+  componentWillMount() {
+    this.setState({ isUser: typeof this.props.userSkills !== 'undefined' });
+  }
+
   highlightSection(key) {
     this.setState({ isDull: true });
-    this.setState({ hightlightGroup: this.props.groups[key].name });
+    if (this.props.groups) {
+      this.setState({ hightlightGroup: this.props.groups[key].name });
+    }
   }
 
   unhighlight() {
@@ -23,6 +31,9 @@ class PeriodicTable extends Component {
   }
 
   handleWheel(event) {
+    if (this.state.isUser) {
+      return;
+    }
     if (
       event.nativeEvent.wheelDelta >= 0 ||
       event.which === 37 ||
@@ -43,10 +54,12 @@ class PeriodicTable extends Component {
   }
 
   render() {
+    const { isUser } = this.state;
+
     return (
       <div
         onWheel={evt => this.handleWheel(evt)}
-        onKeyDown={evt => this.handleWheel(evt)}
+        className={`${isUser ? 'userPeriodicTable' : 'periodicTable'}`}
       >
         <div className="periodic">
           <div className="periodic-row">
@@ -230,18 +243,25 @@ class PeriodicTable extends Component {
   }
 
   renderCellContent(cellData) {
-    const { isDull, hightlightGroup } = this.state;
+    const { isDull, hightlightGroup, isUser } = this.state;
 
     return cellData ? (
       <a className="cell" href={`/search?${cellData.name}`}>
         <div
-          className={`element ${
-            isDull && hightlightGroup !== cellData.group ? 'dull' : ''
-          }`}
+          className={`element ${(isDull && hightlightGroup !== cellData.group
+            ? 'dull'
+            : '',
+          isUser && includes(this.props.userSkills, cellData.name)
+            ? 'userSkill'
+            : '')}`}
         >
-          <div className="at_num">{cellData.number}</div>
-          <div className="symbol">{cellData.displayName}</div>
-          <div className={`at_details_${cellData.group}`} />
+          {!isUser ? (
+            <React.Fragment>
+              <div className="at_num">{cellData.number}</div>
+              <div className="symbol">{cellData.displayName}</div>
+              <div className={`at_details_${cellData.group}`} />
+            </React.Fragment>
+          ) : null}
         </div>
       </a>
     ) : (
@@ -250,7 +270,7 @@ class PeriodicTable extends Component {
   }
 
   renderGroupCells(groups) {
-    const { isDull, hightlightGroup } = this.state;
+    const { isDull, hightlightGroup, isUser } = this.state;
 
     const handleGroupMouseOver = (evt, key) => {
       evt.preventDefault();
@@ -262,8 +282,7 @@ class PeriodicTable extends Component {
       this.unhighlight();
     };
 
-    return (
-      groups &&
+    return groups && !isUser ? (
       groups.map((group, index) => (
         <div
           key={`group${index}`}
@@ -282,6 +301,15 @@ class PeriodicTable extends Component {
           </div>
         </div>
       ))
+    ) : (
+      <React.Fragment>
+        <div className="cell" />
+        <div className="cell" />
+        <div className="cell" />
+        <div className="cell" />
+        <div className="cell" />
+        <div className="cell" />
+      </React.Fragment>
     );
   }
 }

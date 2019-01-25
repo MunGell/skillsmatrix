@@ -3,6 +3,8 @@ import Rating from 'react-rating';
 import UserData from '../data/users.json';
 import '../profile/_profile.scss';
 import './_search.scss';
+// import PeriodicTable from '../components/periodicTable/periodicTable.web';
+import TableData from '../data/table.json';
 
 class Search extends Component {
   constructor(props) {
@@ -25,6 +27,9 @@ class Search extends Component {
       userData: UserData,
       filteredUsers: UserData,
     });
+
+    this.tableData = TableData;
+    this.userSkills = [];
   }
 
   onClickHome() {
@@ -286,6 +291,13 @@ class Search extends Component {
                             <div>{i.email}</div>
                           </div>
                         </div>
+                      </div>{' '}
+                      <div className="heatmap">
+                        {/* {' '}
+                        <PeriodicTable
+                          userSkills={this.userSkills}
+                          tableData={this.tableData}
+                        />{' '} */}
                       </div>
                     </div>
                     <div className="mtx-sr__bottom">
