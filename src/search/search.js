@@ -242,11 +242,8 @@ class Search extends Component {
                         className="custom-control-input"
                         id={dept} />
                       <label className="custom-control-label" htmlFor={dept}>
-                      <div className="search-check-input-border">
-                        {dept}
-                        </div>
+                        <div className="search-check-input-border">{dept}</div>
                       </label>
-                      
                     </div>
                   ))}
                 </form>
