@@ -3,8 +3,10 @@ import Rating from 'react-rating';
 import UserData from '../data/users.json';
 import '../profile/_profile.scss';
 import './_search.scss';
-// import PeriodicTable from '../components/periodicTable/periodicTable.web';
+import PeriodicTable from '../components/periodicTable/periodicTable.web';
 import TableData from '../data/table.json';
+import { find } from 'lodash';
+
 
 class Search extends Component {
   constructor(props) {
@@ -23,6 +25,14 @@ class Search extends Component {
   }
 
   componentWillMount() {
+    UserData.map( (user) => {
+      return user.listSkills = user.skills
+      .map(skill => skill.name)
+      .filter(skill => {
+        return !find(this.UNSAFE_componentWillReceivePropslistSkills, skill);
+      });
+    });
+
     this.setState({
       userData: UserData,
       filteredUsers: UserData,
@@ -271,7 +281,7 @@ class Search extends Component {
             <div className="mtx-results">
               <div className="mtx-section__title noselect">sort by</div>
               <div className="mtx-sr__list">
-                {this.state.filteredUsers.map((i, index) => (
+                {this.state.filteredUsers.map((user, index) => (
                   <div
                     key={index}
                     className="mtx-sr__container"
@@ -285,23 +295,19 @@ class Search extends Component {
                       </div>
                       <div className="mtx-sr__right">
                         <div className="mtx-sr__">
-                          <div className="mtx-section__title">{i.name}</div>
-                          <div className="mtx-sr__">{i.level}</div>
+                          <div className="mtx-section__title">{user.name}</div>
+                          <div className="mtx-sr__">{user.level}</div>
                           <div className="mtx-sr__email">
-                            <div>{i.email}</div>
+                            <div>{user.email}</div>
                           </div>
                         </div>
                       </div>{' '}
-                      <div className="heatmap">
-                        {/* {' '}
-                        <PeriodicTable
-                          userSkills={this.userSkills}
-                          tableData={this.tableData}
-                        />{' '} */}
+                      <div className="heatmap w-50">
+                        <PeriodicTable userSkills={user.listSkills} tableData={this.tableData} />
                       </div>
                     </div>
                     <div className="mtx-sr__bottom">
-                      {i.skills.slice(0, 9).map((i, index) => (
+                      {user.skills.slice(0, 9).map((i, index) => (
                         <div key={index} className="mtx-sr__skill">
                           {i.name}
                         </div>
