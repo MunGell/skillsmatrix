@@ -7,7 +7,6 @@ import PeriodicTable from '../components/periodicTable/periodicTable.web';
 import TableData from '../data/table.json';
 import { find } from 'lodash';
 
-
 class Search extends Component {
   constructor(props) {
     super(props);
